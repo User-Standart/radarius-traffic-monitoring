@@ -61,14 +61,21 @@ Confira a seguir uma demonstração das funcionalidades para cada tipo de usuár
 ## :dart: Backlogs & User Stories
 
 <details>
-<summary>Backlog com User Stories e Estimativas</summary>
+<summary>Backlog com User Stories</summary>
 
 <br>
 
-| Rank | Requisito Funcional | User Story | Estimativa | Sprint | Critério de Aceitação |
-|-------|---------------------|------------|------------|--------|----------------------|
-| 1  | RF1                 |  | 10h | 1 |  |
-| 15 | RNF1                |  | 4h | 2 |  |
+| Rank | Prioridade | User Story | Estimativa | Sprint |
+|------|---------------------|------------|------------|--------|
+| 1    |     Alta             | "Eu como gestor desejo que tenha bem definido os critérios de mobilidade  para que eu possa determinar em que situação se encontra um indicador para que eu possa determinar o nível que se encontra uma área" | 1 | 1 | 
+| 2 | Alta                | "Eu como gestor desejo que tenha bem definido os níveis de alerta de acordo com os critérios de mobilidade para que eu possa determinar qual nível  se encontra a área para caso tenha algum problema seja possível assim exibir o protocolo adequado definido pela prefeitura " | 3 |1 |  
+| 3  | Média                 |"Eu como gestor do sistema quero que tenha uma página mostrando os níveis de acordo com os critérios de mobilidade para que eu possa visualizar em qual nível se encontram as áreas." | 5 | 1 |  
+| 4  | Média                 |"Eu como Agente de Mobilidade e Gestor do sistema quero que seja possível visualizar em uma página 1 exemplo de dashboard dinâmico para mostrar os principais corredores da cidade pré-definidos sendo eles R. Bacabal, Av. Cassiano Ricardo e Av. Dr. Nélson d'Ávila , para que eu possa realizar análise de qual corredor é mais movimentado" | 5 |1 |  
+| 5  | Baixa                 |"Eu como população quero que seja possível visualizar em uma página um mapa da cidade contendo os níveis dos indicadores de cada área para que eu possa entender em que situação se encontra a área desejada "| 8 | 1 |  
+| 6  | Baixa                 |"Eu como gestor do sistema desejo popular gráficos pré-definidos como gráfico de barra, gráfico de pizza e gráfico de dispersão passando os filtros que desejo para que eu possa ter a liberdade de escolher os gráficos e as informações que serão filtradas"  | 13 | 2 |  
+| 7  | Alta                 |"Eu enquanto Agente de mobilidade e Gestor do sistema quero que seja possível receber os alertas para que possam ser investigados e posteriormente serem exibidos os protocolos adequados definidos pela prefeitura "  | 8 | 2 |  
+| 8  | Baixa                 |"Eu enquanto gestor do sistema quero que tenha um chat na tela onde seja possível eu fazer perguntas direto para meus dados do banco de dados em linguagem natural e que ele me retorne a resposta em linguagem natural para que possa obter análises avançadas pela IA."  | 8 | 3 |  
+| 9  | Alta                 | "Eu como gestor do sistema desejo que tenha os seguintes níveis de acesso: usuário geral(sem login), agentes de mobilidade e gestores ambos contendo login, para que no sistema haja uma segurança em relação aos dados que cada grupo poderá acessar"| 13 | 3 |  
 
 </details>
 
