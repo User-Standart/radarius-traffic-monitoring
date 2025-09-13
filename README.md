@@ -118,15 +118,16 @@ Confira a seguir uma demonstração das funcionalidades para cada tipo de usuár
 
 Como parte do planejamento do projeto foram criados wireframes para idealização do layout, que, ao ser validado pelo cliente, foram aplicados em um protótipo construído no Figma [clique aqui para acessar o figma](https://www.figma.com/design/lk2lV7XpSpoS1hqHCWC5dp/API-4%C2%BA-Semestre?node-id=0-1&t=sugjN9rY1RMcNUL1-1), possibilitando a interação do usuário com a interface.
 
-> 🔗 **Links gerais**  
+> 🔗 **Links gerais**
+> - **API checkpoint:** [clique aqui para acessar](https://github.com/User-Standart/API-4SEM/blob/main/docs/README.md)
 > - **Documentação do software:** [clique aqui para acessar](https://github.com/User-Standart/API-4SEM/blob/main/docs/install/README.md)  
-> - **Manual do usuário:** [clique aqui para acessar](https://github.com/User-Standart/User-Standart-docs/blob/main/Manual%20do%20Usuario.pdf)  
+> - **Manual do usuário:** [clique aqui para acessar TODO]()  
 > - **Links para os repositórios criados:**  
 >    - **Frontend:** [acessar User-Standart-Frontend](https://github.com/User-Standart/API-4SEM-FRONTEND/tree/main)  
 >    - **Backend:**  [acessar User-Standart-Backend](https://github.com/User-Standart/API-4SEM-BACKEND/tree/main)  
 > - **Documentações das APIs:**  
->    - **Documentação Endpoint:** [acessar Swagger](#)  
->    - **Guia de Usuário:** [acessar Guia de usuário](https://github.com/User-Standart/User-Standart-docs/blob/main/Manual%20do%20Usuario.pdf)
+>    - **Documentação Endpoint:** [acessar Swagger TODO]()  
+>    - **Guia de Usuário:** [acessar Guia de usuário TODO]()
 
 → [Voltar ao topo](#topo)
 
