@@ -13,11 +13,13 @@ IMAGEM TO DO
 
 ## :bookmark_tabs: Sobre o projeto
 
-TO DO.
+A partir da apresentação do desafio enfrentado pela empresa parceira, a solução desenvolvida se configura em um sistema de alerta através do monitoramente do trânsito de São José dos Campos por controle de radares. O sistema permite o cadastro de critérios, níveis de critério, emissão de alertas com base nos critérios, escolha de subzonas e alocação de agentes de mobilidade para cada área.
+
+Conta com um dashboard interativo, que oferece uma visão detalhada de todos os indicadores selecionados, facilitando a análise e o acompanhamento dos dados relacionados à gestão do trânsito e de agentes de mobilidade. Através desse painel, os administradores podem tomar decisões com base em métricas, padrões e indicadores relevantes ao desempenho.
 
 > _Projeto baseado na metodologia ágil SCRUM, procurando desenvolver a Proatividade, Autonomia, Colaboração e Entrega de Resultados dos estudantes envolvidos_
 
-:pushpin: **Status do Projeto:** Iniciado
+:pushpin: **Status do Projeto:** ✔️ Iniciado
 
 ### 🏁 Entregas de Sprints
 
@@ -25,9 +27,9 @@ Cada entrega foi realizada a partir da criação de uma **tag** em cada reposit�
 
 | Sprint | Previsão   | Status         | Histórico           |
 |--------|------------|----------------|---------------------|
-| 01     | 08/09/2025 | ✔️ Iniciado     | [ver relatório]()   |
-| 02     | 06/10/2025 | ✔️ Não iniciado | [ver relatório]()   |
-| 03     | 03/11/2025 | ✔️ Não iniciado | [ver relatório]()   |
+| 01     | 08/09/2025 | ✔️ Iniciado     | [ver relatório TO DO]()   |
+| 02     | 06/10/2025 | ✖️ Não iniciado | [ver relatório TO DO]()   |
+| 03     | 03/11/2025 | ✖️ Não iniciado | [ver relatório TO DO]()   |
 
 ### :clapper: Apresentação Final
 
@@ -114,14 +116,14 @@ Confira a seguir uma demonstração das funcionalidades para cada tipo de usuár
 
 ## :desktop_computer: Protótipo & Documentação
 
-Como parte do planejamento do projeto foram criados wireframes para idealização do layout, que, ao ser validado pelo cliente, foram aplicados em um protótipo construído no Figma [clique aqui para acessar o figma TO DO](), possibilitando a interação do usuário com a interface.
+Como parte do planejamento do projeto foram criados wireframes para idealização do layout, que, ao ser validado pelo cliente, foram aplicados em um protótipo construído no Figma [clique aqui para acessar o figma](https://www.figma.com/design/lk2lV7XpSpoS1hqHCWC5dp/API-4%C2%BA-Semestre?node-id=0-1&t=sugjN9rY1RMcNUL1-1), possibilitando a interação do usuário com a interface.
 
 > 🔗 **Links gerais**  
-> - **Documentação do software:** [clique aqui para acessar](https://github.com/User-Standart/User-Standart-docs/blob/main/Guia%20de%20Instalac%CC%A7a%CC%83o.pdf)  
+> - **Documentação do software:** [clique aqui para acessar](https://github.com/User-Standart/API-4SEM/blob/main/docs/install/README.md)  
 > - **Manual do usuário:** [clique aqui para acessar](https://github.com/User-Standart/User-Standart-docs/blob/main/Manual%20do%20Usuario.pdf)  
 > - **Links para os repositórios criados:**  
->    - **Frontend:** [acessar User-Standart-Frontend](https://github.com/User-Standart/User-Standart-Front/tree/main)  
->    - **Backend:**  [acessar User-Standart-Backend](https://github.com/User-Standart/User-Standart-Back/tree/main)  
+>    - **Frontend:** [acessar User-Standart-Frontend](https://github.com/User-Standart/API-4SEM-FRONTEND/tree/main)  
+>    - **Backend:**  [acessar User-Standart-Backend](https://github.com/User-Standart/API-4SEM-BACKEND/tree/main)  
 > - **Documentações das APIs:**  
 >    - **Documentação Endpoint:** [acessar Swagger](#)  
 >    - **Guia de Usuário:** [acessar Guia de usuário](https://github.com/User-Standart/User-Standart-docs/blob/main/Manual%20do%20Usuario.pdf)
@@ -138,7 +140,8 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 ![Java](https://img.shields.io/badge/Java-orange?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-<br>
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
 ![VS_Code](https://img.shields.io/badge/VS_Code-CED4DA?style=for-the-badge&logo=visual-studio-code&logoColor=0078D4)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
