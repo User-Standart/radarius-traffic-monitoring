@@ -5,7 +5,7 @@
 <details>
 <summary>Modelagem física do banco de dados</summary>
 
-  TODO
+![Modelagem](./media/modelagem-banco-de-dados.jpeg)
 </details>
 
 ### 📝 US-1: A
