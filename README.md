@@ -95,7 +95,7 @@ Confira a seguir uma demonstração das funcionalidades para cada tipo de usuár
 ## 👥 User Stories
 
 | Épico | ID | Prioridade | Sprint | Descrição |
-|-|-|-|-|
+|-|-|-|-|-|
 | 1 | US-1 | Alta | Sprint 1 | Critérios de mobilidade definidos |
 | 2 | US-2 | Alta | Sprint 1 | Níveis de alerta por critério |
 | 3 | US-7 | Alta | Sprint 2 | Recebimento e gestão de alertas |
