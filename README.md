@@ -60,55 +60,51 @@ Confira a seguir uma demonstração das funcionalidades para cada tipo de usuár
 
 </details>
 
-## :dart: Backlogs & DoD e DoR
+## :dart: Backlogs
 
-<details>
-<summary>Backlog com User Stories</summary>
+### 1️⃣ Sprint 1
 
-<br>
+[Spring Planning](https://github.com/User-Standart/API-4SEM/tree/main/docs#1%EF%B8%8F%E2%83%A3-sprint-1)
 
-| Rank | Prioridade | User Story | Estimativa | Sprint |
-|------|---------------------|------------|------------|--------|
-| 1    |     Alta             | "Eu como gestor desejo que tenha bem definido os critérios de mobilidade  para que eu possa visualizar em que situação se encontra um indicador para que eu possa determinar o nível que se encontra uma área" | 1 | 1 | 
-| 2 | Alta                | "Eu como gestor desejo que tenha bem definido os níveis de alerta de acordo com os critérios de mobilidade para que eu possa determinar qual nível  se encontra a área para caso tenha algum problema seja possível assim exibir o protocolo adequado definido pela prefeitura " | 3 |1 |  
-| 3  | Média                 |"Eu como gestor do sistema quero que tenha uma página mostrando os níveis de acordo com os critérios de mobilidade para que eu possa visualizar em qual nível se encontram as áreas." | 5 | 1 |  
-| 4  | Média                 |"Eu como Agente de Mobilidade e Gestor do sistema quero que seja possível visualizar em uma página 1 exemplo de dashboard dinâmico para mostrar os principais corredores da cidade pré-definidos sendo eles R. Bacabal, Av. Cassiano Ricardo e Av. Dr. Nélson d'Ávila , para que eu possa realizar análise de qual corredor é mais movimentado" | 5 |1 |  
-| 5  | Baixa                 |"Eu como população quero que seja possível visualizar em uma página um mapa da cidade contendo os níveis dos indicadores de cada área para que eu possa entender em que situação se encontra a área desejada "| 8 | 1 |  
-| 6  | Baixa                 |"Eu como gestor do sistema desejo popular gráficos pré-definidos como gráfico de barra, gráfico de pizza e gráfico de dispersão passando os filtros que desejo para que eu possa ter a liberdade de escolher os gráficos e as informações que serão filtradas"  | 13 | 2 |  
-| 7  | Alta                 |"Eu enquanto Agente de mobilidade e Gestor do sistema quero que seja possível receber os alertas para que possam ser investigados e posteriormente serem exibidos os protocolos adequados definidos pela prefeitura "  | 8 | 2 |  
-| 8  | Baixa                 |"Eu enquanto gestor do sistema quero que tenha um chat na tela onde seja possível eu fazer perguntas direto para meus dados do banco de dados em linguagem natural e que ele me retorne a resposta em linguagem natural para que possa obter análises avançadas pela IA."  | 8 | 3 |  
-| 9  | Alta                 | "Eu como gestor do sistema desejo que tenha os seguintes níveis de acesso: usuário geral(sem login), agentes de mobilidade e gestores ambos contendo login, para que no sistema haja uma segurança em relação aos dados que cada grupo poderá acessar"| 13 | 3 |  
-# DoR(Definition of Ready)
-| US_ID | Resumo da User Story | Título/Valor claro Story | Critérios de Aceitação | Regras de Negócio |
-|------|-----------------------|--------------------------|------------------------|-------------------|
-| 1 | "Eu como gestor desejo que tenha bem definido os critérios de mobilidade para que eu possa visulizar em que situação se encontra um indicador para que eu possa determinar o nível que se encontra uma área" | Critérios de mobilidade definidos | • Existe um documento com os critérios de mobilidade.<br>• Cada critério possui breve descrição.<br>• Os critérios permitem determinar a situação de cada indicador e, consequentemente, o nível da área. | • Os critérios são a base dos indicadores. |
-| 2 | "Eu como gestor desejo que tenha bem definido os níveis de alerta de acordo com os critérios de mobilidade para que eu possa determinar qual nível se encontra a área para caso tenha algum problema seja possível assim exibir o protocolo adequado definido pela prefeitura " | Níveis de alerta por critério | • Existe um documento com os níveis de alerta de cada critério, com breve descrição.<br>• Níveis de alerta são editáveis.<br>• Com base no nível, é possível exibir o protocolo adequado definido pela Prefeitura. | • Níveis de alerta baseados nos critérios de mobilidade.<br>• Exibição do protocolo adequado conforme nível. |
-| 3 | "Eu como gestor do sistema quero que tenha uma página mostrando os níveis de acordo com os critérios de mobilidade para que eu possa visualizar em qual nível se encontram as áreas." | Página “Níveis” por região | • Há um botão “Níveis”.<br>• Ao acessar, a página exibe os critérios pré-estabelecidos e os respectivos níveis por região. | • Visualização por região conforme critérios pré-estabelecidos. |
-| 4 | "Eu como Agente de Mobilidade e Gestor do sistema quero que seja possível visualizar em uma página 1 exemplo de dashboard dinâmico para mostrar os principais corredores da cidade pré-definidos sendo eles R. Bacabal, Av. Cassiano Ricardo e Av. Dr. Nélson d'Ávila , para que eu possa realizar análise de qual corredor é mais movimentado" | Dashboard dos corredores principais | • Na página principal há um botão que leva ao dashboard.<br>• Ao acessar, o dashboard exibe os três corredores pré-definidos (R. Bacabal, Av. Cassiano Ricardo, Av. Dr. Nélson d’Ávila). | • Dashboard dinâmico de exemplo com os três corredores pré-definidos. |
-| 5 | "Eu como população quero que seja possível visualizar em uma página um mapa da cidade contendo os níveis dos indicadores de cada área para que eu possa entender em que situação se encontra a área desejada " | Mapa público com níveis por área | • Ao entrar no sistema, o mapa da cidade carrega exibindo os níveis por área.<br>• Acesso sem autenticação (público). | • Página pública (sem login).<br>• Mapa exibe níveis dos indicadores por área. |
-| 6 | "Eu como gestor do sistema desejo popular gráficos pré-definidos como gráfico de barra, gráfico de pizza e gráfico de dispersão passando os filtros que desejo para que eu possa ter a liberdade de escolher os gráficos e as informações que serão filtradas" | Gráficos pré-definidos com filtros | • Interface permite selecionar filtros e o tipo de gráfico (barra, pizza, dispersão).<br>• Ao confirmar, os gráficos são exibidos com os dados correspondentes. | • Tipos de gráfico: barra, pizza e dispersão.<br>• Filtros escolhidos pelo usuário. |
-| 7 | "Eu enquanto Agente de mobilidade e Gestor do sistema quero que seja possível receber os alertas para que possam ser investigados e posteriormente serem exibidos os protocolos adequados definidos pela prefeitura " | Recebimento e gestão de alertas | • Quando ocorrerem condições que gerem alerta, eles são exibidos no sistema.<br>• É possível abrir detalhes, registrar a investigação e visualizar o “Protocolo recomendado”. | • Alertas alinhados aos níveis definidos.<br>• Exibição de protocolos definidos pela Prefeitura. |
-| 8 | "Eu enquanto gestor do sistema quero que tenha um chat na tela onde seja possível eu fazer perguntas direto para meus dados do banco de dados em linguagem natural e que ele me retorne a resposta em linguagem natural para que possa obter análises avançadas pela IA." | Chat com os dados (LN) | • Campo “Chat com os dados” disponível.<br>• Usuário faz pergunta em linguagem natural sobre os dados do banco.<br>• Sistema responde em linguagem natural com base nos indicadores atuais. | • Perguntas e respostas em linguagem natural sobre os dados do banco. |
-| 9 | "Eu como gestor do sistema desejo que tenha os seguintes níveis de acesso: usuário geral(sem login), agentes de mobilidade e gestores ambos contendo login, para que no sistema haja uma segurança em relação aos dados que cada grupo poderá acessar" | Níveis de acesso por perfil | • Ao acessar com cada perfil (usuário geral sem login; agentes/gestores com login), apenas as funcionalidades e dados permitidos ficam disponíveis.<br>• O mapa público permanece acessível sem login. | • Perfis: usuário geral (sem login), agentes e gestores (com login).<br>• Segurança por restrição de funcionalidades/dados por perfil.<br>• Mapa público sem login. |
+| Épico | ID | Sprint | Descrição |
+|-|-|-|-|
+| 1 | US-1 | Sprint 1 | Critérios de mobilidade definidos |
+| 2 | US-2 | Sprint 1 | Níveis de alerta por critério |
+| 5 | US-3 | Sprint 1 | Página “Níveis” por região |
+| 6 | US-4 | Sprint 1 | Dashboard dos corredores principais |
+| 7 | US-5 | Sprint 1 | Mapa público com níveis por área |
 
-# DoD(Definition of Done)
-| US_ID | Repositório (branch) | Manual do usuário | Como validar |
-|-----:|-----------------------|-------------------|--------------|
-| 1 | User-Standart/API-4SEM | docs/manual_01.pdf | Documento entregue contendo os critérios de mobilidade e uma breve descrição de cada um. |
-| 2 | User-Standart/API-4SEM | docs/manual_02.pdf | Documento entregue com os níveis de alerta por critério e breve descrição; níveis devem ser editáveis. |
-| 3 | User-Standart/API-4SEM | docs/manual_03.pdf | A página estará pronta quando houver um botão “Níveis”; ao entrar, será possível ver os critérios pré-estabelecidos e os respectivos níveis por região. |
-| 4 | User-Standart/API-4SEM | docs/manual_04.pdf | Na página principal haverá um botão que leva ao dashboard; ao acessá-lo, o dashboard será visualizado normalmente com os três corredores pré-definidos. |
-| 5 | User-Standart/API-4SEM | docs/manual_05.pdf | Ao entrar no sistema, o mapa da cidade será carregado exibindo os níveis por área, acessível sem autenticação (público). |
-| 6 | User-Standart/API-4SEM | docs/manual_06.pdf | Na interface, será possível selecionar filtros e o tipo de gráfico; ao confirmar, os gráficos serão exibidos com os dados correspondentes. |
-| 7 | User-Standart/API-4SEM | docs/manual_07.pdf | Quando ocorrerem condições que gerem alerta, eles serão exibidos no sistema; será possível abrir os detalhes, registrar a investigação e visualizar o “Protocolo recomendado”. |
-| 8 | User-Standart/API-4SEM | docs/manual_08.pdf | Haverá um campo “Chat com os dados”; ao perguntar (ex.: “Quais áreas estão no nível mais crítico hoje?”), o sistema responderá com base nos indicadores atuais. |
-| 9 | User-Standart/API-4SEM | docs/manual_09.pdf | Ao acessar com cada perfil, somente as funcionalidades e dados permitidos estarão disponíveis; o mapa público permanece acessível sem login. |
+### 2️⃣ Sprint 2
 
+[Spring Planning](https://github.com/User-Standart/API-4SEM/tree/main/docs#2%EF%B8%8F%E2%83%A3-sprint-2)
 
+| Épico | ID | Sprint | Descrição |
+|-|-|-|-|
+| 3 | US-7 | Sprint 2 | Recebimento e gestão de alertas |
+| 8 | US-6 | Sprint 2 | Gráficos pré-definidos com filtros |
 
-</details>
+### 3️⃣ Sprint 3
 
-</details>
+[Spring Planning](https://github.com/User-Standart/API-4SEM/tree/main/docs#3%EF%B8%8F%E2%83%A3-sprint-3)
+
+| Épico | ID | Sprint | Descrição |
+|-|-|-|-|
+| 4 | US-9 | Sprint 3 | Níveis de acesso por perfil |
+| 9 | US-8 | Sprint 3 | Chat com os dados (LN) |
+
+## 👥 User Stories
+
+| Épico | ID | Prioridade | Sprint | Descrição |
+|-|-|-|-|
+| 1 | US-1 | Alta | Sprint 1 | Critérios de mobilidade definidos |
+| 2 | US-2 | Alta | Sprint 1 | Níveis de alerta por critério |
+| 3 | US-7 | Alta | Sprint 2 | Recebimento e gestão de alertas |
+| 4 | US-9 | Alta | Sprint 3 | Níveis de acesso por perfil |
+| 5 | US-3 | Média | Sprint 1 | Página “Níveis” por região |
+| 6 | US-4 | Média | Sprint 1 | Dashboard dos corredores principais |
+| 7 | US-5 | Baixa | Sprint 1 | Mapa público com níveis por área |
+| 8 | US-6 | Baixa | Sprint 2 | Gráficos pré-definidos com filtros |
+| 9 | US-8 | Baixa | Sprint 3 | Chat com os dados (LN) |
 
 → [Voltar ao topo](#topo)
 
