@@ -11,7 +11,7 @@
 ### 📝 US-1: Critérios de mobilidade definidos
 #### Descrição: Eu como gestor desejo que tenha bem definido os critérios de mobilidade para que eu possa visualizar em que situação se encontra um indicador para que eu possa determinar o nível que se encontra uma área
 
-#### Regras de negócio
+#### 📖 Regras de negócio
 - Os critérios são a base dos indicadores.
 
 #### 🆗 Definition of Ready(DoR)
@@ -33,7 +33,7 @@
 ### 📝 US-2: Níveis de alerta por critério
 #### Descrição: Eu como gestor desejo que tenha bem definido os níveis de alerta de acordo com os critérios de mobilidade para que eu possa determinar qual nível se encontra a área para caso tenha algum problema seja possível assim exibir o protocolo adequado definido pela prefeitura
 
-#### Regras de negócio
+#### 📖 Regras de negócio
 - Níveis de alerta baseados nos critérios de mobilidade.
 - Exibição do protocolo adequado conforme nível.
 
@@ -56,7 +56,7 @@ TODO
 ### 📝 US-3: Página “Níveis” por região
 #### Descrição: Eu como gestor do sistema quero que tenha uma página mostrando os níveis de acordo com os critérios de mobilidade para que eu possa visualizar em qual nível se encontram as áreas
 
-#### Regras de negócio
+#### 📖 Regras de negócio
 - Visualização por região conforme critérios pré-estabelecidos.
 
 #### 🆗 Definition of Ready(DoR)
@@ -80,7 +80,7 @@ TODO
 ### 📝 US-4: Dashboard dos corredores principais
 #### Descrição: Eu como Agente de Mobilidade e Gestor do sistema quero que seja possível visualizar em uma página 1 exemplo de dashboard dinâmico para mostrar os principais corredores da cidade pré-definidos sendo eles R. Bacabal, Av. Cassiano Ricardo e Av. Dr. Nélson d'Ávila , para que eu possa realizar análise de qual corredor é mais movimentado
 
-#### Regras de negócio
+#### 📖 Regras de negócio
 - Dashboard dinâmico de exemplo com os três corredores pré-definidos.
 
 #### 🆗 Definition of Ready(DoR)
@@ -104,7 +104,7 @@ TODO
 ### 📝 US-5: Mapa público com níveis por área
 #### Descrição: Eu como população quero que seja possível visualizar em uma página um mapa da cidade contendo os níveis dos indicadores de cada área para que eu possa entender em que situação se encontra a área desejada 
 
-#### Regras de negócio
+#### 📖 Regras de negócio
 - Página pública (sem login).
 - Mapa exibe níveis dos indicadores por área.
 
@@ -134,7 +134,7 @@ TODO
 ### 📝 US-6: Gráficos pré-definidos com filtros
 #### Descrição: Eu como gestor do sistema desejo popular gráficos pré-definidos como gráfico de barra, gráfico de pizza e gráfico de dispersão passando os filtros que desejo para que eu possa ter a liberdade de escolher os gráficos e as informações que serão filtradas
 
-#### Regras de negócio
+#### 📖 Regras de negócio
 - Tipos de gráfico: barra, pizza e dispersão.
 - Filtros escolhidos pelo usuário.
 
@@ -159,7 +159,7 @@ TODO
 ### 📝 US-7: Recebimento e gestão de alertas
 #### Descrição: Eu enquanto Agente de mobilidade e Gestor do sistema quero que seja possível receber os alertas para que possam ser investigados e posteriormente serem exibidos os protocolos adequados definidos pela prefeitura
 
-#### Regras de negócio
+#### 📖 Regras de negócio
 - Alertas alinhados aos níveis definidos.
 - Exibição de protocolos definidos pela Prefeitura.
 
@@ -189,7 +189,7 @@ TODO
 ### 📝 US-8: Chat com os dados (LN)
 #### Descrição: Eu enquanto gestor do sistema quero que tenha um chat na tela onde seja possível eu fazer perguntas direto para meus dados do banco de dados em linguagem natural e que ele me retorne a resposta em linguagem natural para que possa obter análises avançadas pela IA
 
-#### Regras de negócio
+#### 📖 Regras de negócio
 - Perguntas e respostas em linguagem natural sobre os dados do banco.
 
 #### 🆗 Definition of Ready(DoR)
@@ -214,7 +214,7 @@ TODO
 ### 📝 US-9: Níveis de acesso por perfil
 #### Descrição: Eu como gestor do sistema desejo que tenha os seguintes níveis de acesso: usuário geral(sem login), agentes de mobilidade e gestores ambos contendo login, para que no sistema haja uma segurança em relação aos dados que cada grupo poderá acessar
 
-#### Regras de negócio
+#### 📖 Regras de negócio
 - Perfis: usuário geral (sem login), agentes e gestores (com login).
 - Segurança por restrição de funcionalidades/dados por perfil.
 - Mapa público sem login.
