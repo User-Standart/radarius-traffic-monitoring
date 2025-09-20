@@ -74,6 +74,8 @@ Confira a seguir uma demonstração das funcionalidades para cada tipo de usuár
 | RNF-3 | Documentação da API |
 | RNF-4 | Modelagem do Banco de Dados |
 
+---
+
 ### Backlog das Sprints
 
 ### 1️⃣ Sprint 1
