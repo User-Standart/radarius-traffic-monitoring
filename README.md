@@ -46,21 +46,35 @@ Confira a seguir uma demonstração das funcionalidades para cada tipo de usuár
 
 <span id="backlogs--user-stories">
 
-## :clipboard: Requisitos do Sistema
+## :dart: Backlogs & User Stories
 
-<details>
-<summary>Requisitos Funcionais e Não Funcionais</summary>
+### Backlog do Produto
 
-<br>
+### ✅ Requisitos Funcionais
 
-| Nº Requisito | Descrição                                  | Tipo                |
-|--------------|--------------------------------------------|---------------------|
-| RF1          |  | Funcional           |
-| RNF1         |                            | Não Funcional       |
+| Código | Descrição | Prioridade | Fator | Sprint |
+|-|-|-|-|-|
+| RF-1 | Dashboard com informações do trânsito | 🔴 Alta | 1 | 1 |
+| RF-2 | Desenvolver interface com a exibição dos critérios e níveis | 🔴 Alta | 2 | 1 |
+| RF-3 | Desenvolver uma interface contendo mapa com demarcações das áreas de São José dos Campos | 🔴 Alta | 3 | 1 |
+| RF-4 | Permitir editar os níveis dos critérios | 🔴 Alta | 4 | 2 |
+| RF-5 | API para consumo dos dados | 🟡 Média | 5 | 2 |
+| RF-6 | Permitir a geração automática de alertas aos agentes de mobilidade, baseado nos critérios | 🟡 Média | 6 | 2 |
+| RF-7 | Permitir a criação de protocolos associado aos problemas dos alertas | 🟡 Média | 7 | 2 |
+| RF-8 | Permitir a tratativa e resposta dos alertas por parte do agentes de mobilidade | 🟡 Média | 8 | 3 |
+| RF-9 | Permitir definir a área de trabalho dos agentes de mobilidade | 🟢 Baixa | 9 | 2 |
+| RF-10 | Gerar o registro de log a cada iteração do alerta | 🟢 Baixa | 10 | 3 |
 
-</details>
+### ✔️ Requisitos Não Funcionais
 
-## :dart: Backlogs
+| Código | Descrição |
+|-|-|
+| RNF-1 | Manual do Usuário |
+| RNF-2 | Guia de Instalação |
+| RNF-3 | Documentação da API |
+| RNF-4 | Modelagem do Banco de Dados |
+
+### Backlog das Sprints
 
 ### 1️⃣ Sprint 1
 
