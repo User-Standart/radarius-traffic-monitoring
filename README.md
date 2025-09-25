@@ -1,4 +1,6 @@
-IMAGEM TO DO
+<img width="1300" height="240" alt="image" src="https://github.com/user-attachments/assets/7be1261c-228e-4f50-9257-df0f0a3239ea" />
+
+<br />
 
 <br id="topo">
 <p align="center">
