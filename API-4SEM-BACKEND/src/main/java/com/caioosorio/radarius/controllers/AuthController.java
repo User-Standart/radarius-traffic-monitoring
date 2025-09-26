@@ -2,6 +2,7 @@ package com.caioosorio.radarius.controllers;
 
 import com.caioosorio.radarius.dto.login.LoginRequestDTO;
 import com.caioosorio.radarius.dto.login.LoginResponseDTO;
+import com.caioosorio.radarius.exceptions.AuthorizationException;
 import com.caioosorio.radarius.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.naming.AuthenticationException;
+
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
@@ -17,7 +20,7 @@ public class AuthController {
     private AuthService authService;
 
     @PostMapping("/login")
-    public ResponseEntity<LoginResponseDTO> login(@RequestBody LoginRequestDTO dto) {
+    public ResponseEntity<LoginResponseDTO> login(@RequestBody LoginRequestDTO dto) throws AuthenticationException {
         return ResponseEntity.ok(authService.login(dto.email(), dto.password()));
     }
 }
