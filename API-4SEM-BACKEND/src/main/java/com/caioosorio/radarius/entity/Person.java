@@ -1,18 +1,21 @@
 package com.caioosorio.radarius.entity;
 
+import com.caioosorio.radarius.enums.RoleEnum;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.OffsetDateTime;
 
 @Entity
-@Table(name = "user")
+@Table(name = "person")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+@Builder
+public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer userId;
@@ -25,7 +28,8 @@ public class User {
 
     private String password;
 
-    private String role;
+    @Enumerated(EnumType.STRING)
+    private RoleEnum role;
 
     @Column(name = "created_at")
     private OffsetDateTime createdAt;
