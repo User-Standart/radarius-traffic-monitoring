@@ -1,4 +1,4 @@
-package com.caioosorio.radarius.controller;
+package com.caioosorio.radarius.controllers;
 
 import com.caioosorio.radarius.entity.DetectedIncident;
 import com.caioosorio.radarius.service.DetectedIncidentService;
