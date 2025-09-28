@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.service.impl;
 
 import com.caioosorio.radarius.entity.Person;
-import com.caioosorio.radarius.service.PersonService;
+import com.caioosorio.radarius.services.PersonService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

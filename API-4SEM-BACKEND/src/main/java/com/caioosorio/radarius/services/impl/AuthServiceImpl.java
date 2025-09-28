@@ -3,7 +3,7 @@ package com.caioosorio.radarius.service.impl;
 import com.caioosorio.radarius.dto.login.LoginResponseDTO;
 import com.caioosorio.radarius.security.JwtIssuer;
 import com.caioosorio.radarius.security.UserPrincipal;
-import com.caioosorio.radarius.service.AuthService;
+import com.caioosorio.radarius.services.AuthService;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
