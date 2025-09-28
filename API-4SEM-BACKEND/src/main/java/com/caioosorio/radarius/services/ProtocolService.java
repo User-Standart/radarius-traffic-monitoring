@@ -1,19 +1,19 @@
-package com.caioosorio.radarius.services;
+package com.caioosorio.radarius.service;
 
-import com.caioosorio.radarius.entity.Protocol;
+import com.caioosorio.radarius.dto.ProtocolRequestDTO;
+import com.caioosorio.radarius.dto.ProtocolResponseDTO;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface ProtocolService {
 
-    List<Protocol> findAll();
+    List<ProtocolResponseDTO> findAll();
 
-    Optional<Protocol> findById(Integer id);
+    ProtocolResponseDTO findById(Integer id);
 
-    Protocol save(Protocol protocol);
+    ProtocolResponseDTO save(ProtocolRequestDTO dto);
 
-    Protocol update(Integer id, Protocol protocol);
+    ProtocolResponseDTO update(Integer id, ProtocolRequestDTO dto);
 
     void delete(Integer id);
 }
