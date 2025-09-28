@@ -1,19 +1,19 @@
-package com.caioosorio.radarius.services;
+package com.caioosorio.radarius.service;
 
-import com.caioosorio.radarius.entity.CriterionLevel;
+import com.caioosorio.radarius.dto.CriterionLevelRequestDTO;
+import com.caioosorio.radarius.dto.CriterionLevelResponseDTO;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface CriterionLevelService {
 
-    List<CriterionLevel> findAll();
+    List<CriterionLevelResponseDTO> findAll();
 
-    Optional<CriterionLevel> findById(Integer id);
+    CriterionLevelResponseDTO findById(Integer id);
 
-    CriterionLevel save(CriterionLevel criterionLevel);
+    CriterionLevelResponseDTO save(CriterionLevelRequestDTO dto);
 
-    CriterionLevel update(Integer id, CriterionLevel criterionLevel);
+    CriterionLevelResponseDTO update(Integer id, CriterionLevelRequestDTO dto);
 
     void delete(Integer id);
 }
