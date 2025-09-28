@@ -1,19 +1,19 @@
 package com.caioosorio.radarius.services;
 
-import com.caioosorio.radarius.entity.Criterion;
+import com.caioosorio.radarius.dto.CriterionRequestDTO;
+import com.caioosorio.radarius.dto.CriterionResponseDTO;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface CriterionService {
 
-    List<Criterion> findAll();
+    List<CriterionResponseDTO> findAll();
 
-    Optional<Criterion> findById(Integer id);
+    CriterionResponseDTO findById(Integer id);
 
-    Criterion save(Criterion criterion);
+    CriterionResponseDTO save(CriterionRequestDTO dto);
 
-    Criterion update(Integer id, Criterion criterion);
+    CriterionResponseDTO update(Integer id, CriterionRequestDTO dto);
 
     void delete(Integer id);
 }
