@@ -1,4 +1,4 @@
-package com.caioosorio.radarius.service;
+package com.caioosorio.radarius.services;
 
 import com.caioosorio.radarius.dto.UserRequestDTO;
 import com.caioosorio.radarius.dto.UserResponseDTO;
