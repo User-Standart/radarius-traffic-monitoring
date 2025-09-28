@@ -1,19 +1,19 @@
-package com.caioosorio.radarius.services;
+package com.caioosorio.radarius.service;
 
-import com.caioosorio.radarius.entity.Reading;
+import com.caioosorio.radarius.dto.ReadingRequestDTO;
+import com.caioosorio.radarius.dto.ReadingResponseDTO;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface ReadingService {
 
-    List<Reading> findAll();
+    List<ReadingResponseDTO> findAll();
 
-    Optional<Reading> findById(Integer id);
+    ReadingResponseDTO findById(Integer id);
 
-    Reading save(Reading reading);
+    ReadingResponseDTO save(ReadingRequestDTO dto);
 
-    Reading update(Integer id, Reading reading);
+    ReadingResponseDTO update(Integer id, ReadingRequestDTO dto);
 
     void delete(Integer id);
 }
