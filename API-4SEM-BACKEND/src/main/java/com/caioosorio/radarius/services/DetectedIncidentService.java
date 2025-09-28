@@ -1,19 +1,19 @@
-package com.caioosorio.radarius.services;
+package com.caioosorio.radarius.service;
 
-import com.caioosorio.radarius.entity.DetectedIncident;
+import com.caioosorio.radarius.dto.DetectedIncidentRequestDTO;
+import com.caioosorio.radarius.dto.DetectedIncidentResponseDTO;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface DetectedIncidentService {
 
-    List<DetectedIncident> findAll();
+    List<DetectedIncidentResponseDTO> findAll();
 
-    Optional<DetectedIncident> findById(Integer id);
+    DetectedIncidentResponseDTO findById(Integer id);
 
-    DetectedIncident save(DetectedIncident detectedIncident);
+    DetectedIncidentResponseDTO save(DetectedIncidentRequestDTO dto);
 
-    DetectedIncident update(Integer id, DetectedIncident detectedIncident);
+    DetectedIncidentResponseDTO update(Integer id, DetectedIncidentRequestDTO dto);
 
     void delete(Integer id);
 }
