@@ -1,5 +1,6 @@
 package com.caioosorio.radarius.services;
 
+import com.caioosorio.radarius.dtos.request.AlertRequestDTO;
 import com.caioosorio.radarius.entity.Alert;
 
 import java.util.List;
@@ -11,9 +12,9 @@ public interface AlertService {
 
     Optional<Alert> findById(Integer id);
 
-    Alert save(Alert alert);
+    Alert save(AlertRequestDTO alertRequest);
 
-    Alert update(Integer id, Alert alert);
+    Alert update(Integer id, AlertRequestDTO alertRequest);
 
     void delete(Integer id);
 }
