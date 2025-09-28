@@ -1,4 +1,4 @@
-package com.caioosorio.radarius.service.impl;
+package com.caioosorio.radarius.services.impl;
 
 import com.caioosorio.radarius.entity.User;
 import com.caioosorio.radarius.repository.UserRepository;
