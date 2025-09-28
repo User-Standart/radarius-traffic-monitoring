@@ -3,7 +3,7 @@ package com.caioosorio.radarius.controllers;
 import com.caioosorio.radarius.dto.login.LoginRequestDTO;
 import com.caioosorio.radarius.dto.login.LoginResponseDTO;
 import com.caioosorio.radarius.exceptions.AuthorizationException;
-import com.caioosorio.radarius.service.AuthService;
+import com.caioosorio.radarius.services.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

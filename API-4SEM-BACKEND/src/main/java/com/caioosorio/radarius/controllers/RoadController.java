@@ -2,7 +2,7 @@ package com.caioosorio.radarius.controllers;
 
 import com.caioosorio.radarius.dto.RoadRequestDTO;
 import com.caioosorio.radarius.dto.RoadResponseDTO;
-import data.radarius.radarius.service.RoadService;
+import data.radarius.radarius.services.RoadService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

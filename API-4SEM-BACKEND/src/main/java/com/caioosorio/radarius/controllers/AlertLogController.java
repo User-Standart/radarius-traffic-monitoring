@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.controllers;
 
 import com.caioosorio.radarius.entity.AlertLog;
-import com.caioosorio.radarius.service.AlertLogService;
+import com.caioosorio.radarius.services.AlertLogService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

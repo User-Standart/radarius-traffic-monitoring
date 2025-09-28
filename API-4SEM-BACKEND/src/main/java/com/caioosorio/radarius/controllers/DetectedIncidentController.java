@@ -2,7 +2,7 @@ package com.caioosorio.radarius.controllers;
 
 import com.caioosorio.radarius.dto.DetectedIncidentRequestDTO;
 import com.caioosorio.radarius.dto.DetectedIncidentResponseDTO;
-import data.radarius.radarius.service.DetectedIncidentService;
+import data.radarius.radarius.services.DetectedIncidentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
