@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.controllers;
 
-import com.caioosorio.radarius.dto.camera.CameraRequestDTO;
-import com.caioosorio.radarius.dto.camera.CameraResponseDTO;
+import com.caioosorio.radarius.dtos.camera.CameraRequestDTO;
+import com.caioosorio.radarius.dtos.camera.CameraResponseDTO;
 import com.caioosorio.radarius.services.CameraService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

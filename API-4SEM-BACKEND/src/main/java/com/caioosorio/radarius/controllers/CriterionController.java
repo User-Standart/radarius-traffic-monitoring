@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.controllers;
 
-import com.caioosorio.radarius.dto.CriterionRequestDTO;
-import com.caioosorio.radarius.dto.CriterionResponseDTO;
+import com.caioosorio.radarius.dtos.criterion.CriterionRequestDTO;
+import com.caioosorio.radarius.dtos.criterion.CriterionResponseDTO;
 import com.caioosorio.radarius.services.CriterionService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.services;
 
-import com.caioosorio.radarius.dto.camera.CameraRequestDTO;
-import com.caioosorio.radarius.dto.camera.CameraResponseDTO;
+import com.caioosorio.radarius.dtos.camera.CameraRequestDTO;
+import com.caioosorio.radarius.dtos.camera.CameraResponseDTO;
 
 import java.util.List;
 

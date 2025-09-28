@@ -4,9 +4,9 @@ import com.caioosorio.radarius.dto.ProtocolRequestDTO;
 import com.caioosorio.radarius.dto.ProtocolResponseDTO;
 import com.caioosorio.radarius.entity.Protocol;
 import com.caioosorio.radarius.entity.User;
-import com.caioosorio.radarius.repository.ProtocolRepository;
-import com.caioosorio.radarius.repository.UserRepository;
-import com.caioosorio.radarius.service.ProtocolService;
+import com.caioosorio.radarius.repositories.ProtocolRepository;
+import com.caioosorio.radarius.repositories.UserRepository;
+import com.caioosorio.radarius.services.ProtocolService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

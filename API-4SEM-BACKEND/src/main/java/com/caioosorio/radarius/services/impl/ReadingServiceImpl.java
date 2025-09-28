@@ -4,9 +4,9 @@ import com.caioosorio.radarius.dto.ReadingRequestDTO;
 import com.caioosorio.radarius.dto.ReadingResponseDTO;
 import com.caioosorio.radarius.entity.Camera;
 import com.caioosorio.radarius.entity.Reading;
-import com.caioosorio.radarius.repository.CameraRepository;
-import com.caioosorio.radarius.repository.ReadingRepository;
-import com.caioosorio.radarius.service.ReadingService;
+import com.caioosorio.radarius.repositories.CameraRepository;
+import com.caioosorio.radarius.repositories.ReadingRepository;
+import com.caioosorio.radarius.services.ReadingService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

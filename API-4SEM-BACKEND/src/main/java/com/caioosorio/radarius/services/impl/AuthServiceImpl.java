@@ -1,6 +1,6 @@
 package com.caioosorio.radarius.service.impl;
 
-import com.caioosorio.radarius.dto.login.LoginResponseDTO;
+import com.caioosorio.radarius.dtos.login.LoginResponseDTO;
 import com.caioosorio.radarius.security.JwtIssuer;
 import com.caioosorio.radarius.security.UserPrincipal;
 import com.caioosorio.radarius.services.AuthService;

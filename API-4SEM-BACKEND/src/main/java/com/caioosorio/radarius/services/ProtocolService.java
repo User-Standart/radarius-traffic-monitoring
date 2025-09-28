@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.services;
 
-import com.caioosorio.radarius.dto.ProtocolRequestDTO;
-import com.caioosorio.radarius.dto.ProtocolResponseDTO;
+import com.caioosorio.radarius.dtos.protocol.ProtocolRequestDTO;
+import com.caioosorio.radarius.dtos.protocol.ProtocolResponseDTO;
 
 import java.util.List;
 

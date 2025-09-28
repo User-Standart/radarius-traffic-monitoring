@@ -1,4 +1,4 @@
-package com.caioosorio.radarius.dto.login;
+package com.caioosorio.radarius.dtos.login;
 
 public record LoginRequestDTO(
         String email,

@@ -3,8 +3,8 @@ package com.caioosorio.radarius.services.impl;
 import com.caioosorio.radarius.dto.RoadRequestDTO;
 import com.caioosorio.radarius.dto.RoadResponseDTO;
 import com.caioosorio.radarius.entity.Road;
-import com.caioosorio.radarius.repository.RoadRepository;
-import com.caioosorio.radarius.service.RoadService;
+import com.caioosorio.radarius.repositories.RoadRepository;
+import com.caioosorio.radarius.services.RoadService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -4,7 +4,7 @@ import com.caioosorio.radarius.dto.UserRequestDTO;
 import com.caioosorio.radarius.dto.UserResponseDTO;
 import com.caioosorio.radarius.entity.User;
 import com.caioosorio.radarius.repository.UserRepository;
-import com.caioosorio.radarius.service.UserService;
+import com.caioosorio.radarius.services.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

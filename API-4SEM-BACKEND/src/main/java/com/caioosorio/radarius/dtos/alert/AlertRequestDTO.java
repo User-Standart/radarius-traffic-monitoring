@@ -1,4 +1,4 @@
-package com.caioosorio.radarius.dtos.request;
+package com.caioosorio.radarius.dtos.alert;
 
 import com.caioosorio.radarius.enums.SourceTypeEnum;
 import lombok.Data;

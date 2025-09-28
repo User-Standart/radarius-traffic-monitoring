@@ -4,8 +4,8 @@ import com.caioosorio.radarius.dto.CriterionRequestDTO;
 import com.caioosorio.radarius.dto.CriterionResponseDTO;
 import com.caioosorio.radarius.entity.Criterion;
 import com.caioosorio.radarius.entity.User;
-import com.caioosorio.radarius.repository.CriterionRepository;
-import com.caioosorio.radarius.repository.UserRepository;
+import com.caioosorio.radarius.repositories.CriterionRepository;
+import com.caioosorio.radarius.repositories.UserRepository;
 import com.caioosorio.radarius.services.CriterionService;
 import org.springframework.stereotype.Service;
 

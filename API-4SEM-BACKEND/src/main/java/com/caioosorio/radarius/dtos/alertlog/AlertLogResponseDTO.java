@@ -1,9 +1,10 @@
-package com.caioosorio.radarius.dto;
+package com.caioosorio.radarius.dtos.alertlog;
 
 import java.time.OffsetDateTime;
 
-public class AlertLogRequestDTO {
+public class AlertLogResponseDTO {
 
+    private Integer logId;
     private Integer alertId;
     private Integer userId;
     private String channel;
@@ -12,6 +13,9 @@ public class AlertLogRequestDTO {
     private String status;
 
     // Getters e Setters
+    public Integer getLogId() { return logId; }
+    public void setLogId(Integer logId) { this.logId = logId; }
+
     public Integer getAlertId() { return alertId; }
     public void setAlertId(Integer alertId) { this.alertId = alertId; }
 

@@ -1,14 +1,14 @@
 package com.caioosorio.radarius.services.impl;
 
-import com.caioosorio.radarius.dto.DetectedIncidentRequestDTO;
-import com.caioosorio.radarius.dto.DetectedIncidentResponseDTO;
+import com.caioosorio.radarius.dtos.DetectedIncidentRequestDTO;
+import com.caioosorio.radarius.dtos.DetectedIncidentResponseDTO;
 import com.caioosorio.radarius.entity.Alert;
 import com.caioosorio.radarius.entity.DetectedIncident;
 import com.caioosorio.radarius.entity.User;
-import com.caioosorio.radarius.repository.AlertRepository;
-import com.caioosorio.radarius.repository.DetectedIncidentRepository;
-import com.caioosorio.radarius.repository.UserRepository;
-import com.caioosorio.radarius.service.DetectedIncidentService;
+import com.caioosorio.radarius.repositories.AlertRepository;
+import com.caioosorio.radarius.repositories.DetectedIncidentRepository;
+import com.caioosorio.radarius.repositories.UserRepository;
+import com.caioosorio.radarius.services.DetectedIncidentService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

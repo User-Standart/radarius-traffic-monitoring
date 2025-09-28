@@ -1,4 +1,4 @@
-package com.caioosorio.radarius.repository;
+package com.caioosorio.radarius.repositories;
 
 import com.caioosorio.radarius.entity.Alert;
 import org.springframework.data.jpa.repository.JpaRepository;

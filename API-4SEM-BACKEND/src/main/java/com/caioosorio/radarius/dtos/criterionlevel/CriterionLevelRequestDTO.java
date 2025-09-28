@@ -1,19 +1,28 @@
-package com.caioosorio.radarius.dto;
+package com.caioosorio.radarius.dtos.criterionlevel;
 
 import java.time.OffsetDateTime;
 
-public class ProtocolRequestDTO {
+public class CriterionLevelRequestDTO {
 
-    private String name;
+    private Integer criterionId;
+    private Short level;
     private Integer createdById;
     private OffsetDateTime createdAt;
 
-    public String getName() {
-        return name;
+    public Integer getCriterionId() {
+        return criterionId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCriterionId(Integer criterionId) {
+        this.criterionId = criterionId;
+    }
+
+    public Short getLevel() {
+        return level;
+    }
+
+    public void setLevel(Short level) {
+        this.level = level;
     }
 
     public Integer getCreatedById() {

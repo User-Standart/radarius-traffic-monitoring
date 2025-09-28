@@ -1,14 +1,14 @@
 package com.caioosorio.radarius.services.impl;
 
-import com.caioosorio.radarius.dto.CriterionLevelRequestDTO;
-import com.caioosorio.radarius.dto.CriterionLevelResponseDTO;
+import com.caioosorio.radarius.dtos.CriterionLevelRequestDTO;
+import com.caioosorio.radarius.dtos.CriterionLevelResponseDTO;
 import com.caioosorio.radarius.entity.Criterion;
 import com.caioosorio.radarius.entity.CriterionLevel;
 import com.caioosorio.radarius.entity.User;
-import com.caioosorio.radarius.repository.CriterionLevelRepository;
-import com.caioosorio.radarius.repository.CriterionRepository;
-import com.caioosorio.radarius.repository.UserRepository;
-import com.caioosorio.radarius.service.CriterionLevelService;
+import com.caioosorio.radarius.repositories.CriterionLevelRepository;
+import com.caioosorio.radarius.repositories.CriterionRepository;
+import com.caioosorio.radarius.repositories.UserRepository;
+import com.caioosorio.radarius.services.CriterionLevelService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

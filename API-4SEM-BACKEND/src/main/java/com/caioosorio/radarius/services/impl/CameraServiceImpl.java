@@ -1,11 +1,11 @@
 package com.caioosorio.radarius.services.impl;
 
-import com.caioosorio.radarius.dto.camera.CameraRequestDTO;
-import com.caioosorio.radarius.dto.camera.CameraResponseDTO;
+import com.caioosorio.radarius.dtos.camera.CameraRequestDTO;
+import com.caioosorio.radarius.dtos.camera.CameraResponseDTO;
 import com.caioosorio.radarius.entity.Camera;
 import com.caioosorio.radarius.entity.Road;
-import com.caioosorio.radarius.repository.CameraRepository;
-import com.caioosorio.radarius.repository.RoadRepository;
+import com.caioosorio.radarius.repositories.CameraRepository;
+import com.caioosorio.radarius.repositories.RoadRepository;
 import com.caioosorio.radarius.services.CameraService;
 import org.springframework.stereotype.Service;
 

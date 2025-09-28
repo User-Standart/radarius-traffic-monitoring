@@ -1,4 +1,4 @@
-package com.caioosorio.radarius.dto;
+package com.caioosorio.radarius.dtos.alert;
 
 import com.caioosorio.radarius.enums.SourceTypeEnum;
 import java.time.OffsetDateTime;

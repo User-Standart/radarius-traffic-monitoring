@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.controllers;
 
-import com.caioosorio.radarius.dtos.request.AlertRequestDTO;
-import com.caioosorio.radarius.dto.AlertResponseDTO;
+import com.caioosorio.radarius.dtos.alert.AlertRequestDTO;
+import com.caioosorio.radarius.dtos.alert.AlertResponseDTO;
 import com.caioosorio.radarius.services.AlertService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

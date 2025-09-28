@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.services;
 
-import com.caioosorio.radarius.dto.CriterionRequestDTO;
-import com.caioosorio.radarius.dto.CriterionResponseDTO;
+import com.caioosorio.radarius.dtos.criterion.CriterionRequestDTO;
+import com.caioosorio.radarius.dtos.criterion.CriterionResponseDTO;
 
 import java.util.List;
 

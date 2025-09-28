@@ -1,4 +1,4 @@
-package com.caioosorio.radarius.dto;
+package com.caioosorio.radarius.dtos.protocol;
 
 import java.time.OffsetDateTime;
 

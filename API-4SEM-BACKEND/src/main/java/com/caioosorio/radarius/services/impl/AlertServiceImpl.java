@@ -2,8 +2,8 @@ package com.caioosorio.radarius.services.impl;
 
 import com.caioosorio.radarius.dtos.request.AlertRequestDTO;
 import com.caioosorio.radarius.entity.Alert;
-import com.caioosorio.radarius.repository.*;
-import com.caioosorio.radarius.service.AlertService;
+import com.caioosorio.radarius.repositories.*;
+import com.caioosorio.radarius.services.AlertService;
 import org.springframework.stereotype.Service;
 
 import java.time.OffsetDateTime;

@@ -1,11 +1,10 @@
-package com.caioosorio.radarius.dto.camera;
+package com.caioosorio.radarius.dtos.camera;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 
-public class CameraResponseDTO {
+public class CameraRequestDTO {
 
-    private Integer cameraId;
     private Integer roadId;
     private BigDecimal latitude;
     private BigDecimal longitude;
@@ -13,26 +12,17 @@ public class CameraResponseDTO {
     private OffsetDateTime createdAt;
     private OffsetDateTime updatedAt;
 
-    public CameraResponseDTO() {
+    public CameraRequestDTO() {
     }
 
-    public CameraResponseDTO(Integer cameraId, Integer roadId, BigDecimal latitude, BigDecimal longitude,
-                             Boolean active, OffsetDateTime createdAt, OffsetDateTime updatedAt) {
-        this.cameraId = cameraId;
+    public CameraRequestDTO(Integer roadId, BigDecimal latitude, BigDecimal longitude, Boolean active,
+                            OffsetDateTime createdAt, OffsetDateTime updatedAt) {
         this.roadId = roadId;
         this.latitude = latitude;
         this.longitude = longitude;
         this.active = active;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
-    }
-
-    public Integer getCameraId() {
-        return cameraId;
-    }
-
-    public void setCameraId(Integer cameraId) {
-        this.cameraId = cameraId;
     }
 
     public Integer getRoadId() {

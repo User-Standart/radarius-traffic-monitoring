@@ -1,8 +1,8 @@
 package com.caioosorio.radarius.services.impl;
 
 import com.caioosorio.radarius.entity.AlertLog;
-import com.caioosorio.radarius.repository.AlertLogRepository;
-import com.caioosorio.radarius.service.AlertLogService;
+import com.caioosorio.radarius.repositories.AlertLogRepository;
+import com.caioosorio.radarius.services.AlertLogService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

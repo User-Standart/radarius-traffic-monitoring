@@ -5,7 +5,7 @@ import com.caioosorio.radarius.services.PersonService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.caioosorio.radarius.repository.PersonRepository;
+import com.caioosorio.radarius.repositories.PersonRepository;
 
 import java.util.Optional;
 

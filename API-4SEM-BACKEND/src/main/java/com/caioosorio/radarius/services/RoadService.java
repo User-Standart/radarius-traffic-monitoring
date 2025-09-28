@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.services;
 
-import com.caioosorio.radarius.dto.RoadRequestDTO;
-import com.caioosorio.radarius.dto.RoadResponseDTO;
+import com.caioosorio.radarius.dtos.road.RoadRequestDTO;
+import com.caioosorio.radarius.dtos.road.RoadResponseDTO;
 
 import java.util.List;
 

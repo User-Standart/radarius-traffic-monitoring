@@ -1,6 +1,6 @@
 package com.caioosorio.radarius.services;
 
-import com.caioosorio.radarius.dto.login.LoginResponseDTO;
+import com.caioosorio.radarius.dtos.login.LoginResponseDTO;
 
 import javax.naming.AuthenticationException;
 

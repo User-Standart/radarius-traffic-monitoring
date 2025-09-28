@@ -1,4 +1,4 @@
-package com.caioosorio.radarius.dto;
+package com.caioosorio.radarius.dtos.criterion;
 
 import java.time.OffsetDateTime;
 import java.util.List;

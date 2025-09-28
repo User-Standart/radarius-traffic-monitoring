@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.services;
 
-import com.caioosorio.radarius.dtos.request.AlertRequestDTO;
-import com.caioosorio.radarius.dto.AlertResponseDTO;
+import com.caioosorio.radarius.dtos.alert.AlertRequestDTO;
+import com.caioosorio.radarius.dtos.alert.AlertResponseDTO;
 
 import java.util.List;
 import java.util.Optional;

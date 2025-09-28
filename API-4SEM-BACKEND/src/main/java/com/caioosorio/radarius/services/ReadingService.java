@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.services;
 
-import com.caioosorio.radarius.dto.ReadingRequestDTO;
-import com.caioosorio.radarius.dto.ReadingResponseDTO;
+import com.caioosorio.radarius.dtos.reading.ReadingRequestDTO;
+import com.caioosorio.radarius.dtos.reading.ReadingResponseDTO;
 
 import java.util.List;
 

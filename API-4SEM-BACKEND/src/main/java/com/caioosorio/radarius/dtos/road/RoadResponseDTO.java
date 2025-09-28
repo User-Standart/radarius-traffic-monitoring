@@ -1,14 +1,23 @@
-package com.caioosorio.radarius.dto;
+package com.caioosorio.radarius.dtos.road;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 
-public class RoadRequestDTO {
+public class RoadResponseDTO {
 
+    private Integer roadId;
     private String address;
     private BigDecimal speedLimit;
     private OffsetDateTime createdAt;
     private OffsetDateTime updatedAt;
+
+    public Integer getRoadId() {
+        return roadId;
+    }
+
+    public void setRoadId(Integer roadId) {
+        this.roadId = roadId;
+    }
 
     public String getAddress() {
         return address;
