@@ -1,19 +1,19 @@
-package com.caioosorio.radarius.services;
+package com.caioosorio.radarius.service;
 
-import com.caioosorio.radarius.entity.User;
+import com.caioosorio.radarius.dto.UserRequestDTO;
+import com.caioosorio.radarius.dto.UserResponseDTO;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface UserService {
 
-    List<User> findAll();
+    List<UserResponseDTO> findAll();
 
-    Optional<User> findById(Integer id);
+    UserResponseDTO findById(Integer id);
 
-    User save(User user);
+    UserResponseDTO save(UserRequestDTO dto);
 
-    User update(Integer id, User user);
+    UserResponseDTO update(Integer id, UserRequestDTO dto);
 
     void delete(Integer id);
 }
