@@ -49,7 +49,7 @@
 - Com base no nível, é possível exibir o protocolo adequado definido pela Prefeitura.
 
 #### Documentos 📁
-TODO
+[Critérios e níveis de mobilidade](https://drive.google.com/file/d/1IKE2cbQQ0cMa3z-ZV18vwZaXsBptKfXH/view?usp=drive_link)
 
 ---
 
@@ -127,7 +127,7 @@ TODO
 ---
 
 #### 📉 Burndown:
-TODO
+<img width="1050" height="496" alt="image" src="https://github.com/user-attachments/assets/28554b73-7a3b-4d41-8b61-5ce198846111" />
 
 ## 2️⃣ Sprint 2
 
