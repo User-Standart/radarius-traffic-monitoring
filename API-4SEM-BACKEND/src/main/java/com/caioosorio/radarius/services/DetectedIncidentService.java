@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.services;
 
-import com.caioosorio.radarius.dto.DetectedIncidentRequestDTO;
-import com.caioosorio.radarius.dto.DetectedIncidentResponseDTO;
+import com.caioosorio.radarius.dtos.detectedincident.DetectedIncidentRequestDTO;
+import com.caioosorio.radarius.dtos.detectedincident.DetectedIncidentResponseDTO;
 
 import java.util.List;
 

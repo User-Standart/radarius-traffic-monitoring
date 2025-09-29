@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.repositories;
 
 import com.caioosorio.radarius.entity.Person;
-import org.springframework.data.jpa.repositories.JpaRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 

@@ -1,6 +1,6 @@
 package com.caioosorio.radarius.services.impl;
 
-import com.caioosorio.radarius.dtos.request.AlertRequestDTO;
+import com.caioosorio.radarius.dtos.alert.AlertRequestDTO;
 import com.caioosorio.radarius.entity.Alert;
 import com.caioosorio.radarius.repositories.*;
 import com.caioosorio.radarius.services.AlertService;

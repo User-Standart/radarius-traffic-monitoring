@@ -2,9 +2,7 @@ package com.caioosorio.radarius.dtos.alert;
 
 import com.caioosorio.radarius.enums.SourceTypeEnum;
 import lombok.Data;
-
 import java.time.OffsetDateTime;
-package com.caioosorio.radarius.dto;
 
 public class AlertRequestDTO {
 
@@ -45,18 +43,4 @@ public class AlertRequestDTO {
 
     public SourceTypeEnum getSourceType() { return sourceType; }
     public void setSourceType(SourceTypeEnum sourceType) { this.sourceType = sourceType; }
-}
-
-@Data
-public class AlertRequest {
-    private Integer criterionId;
-    private Integer protocolId;
-    private Short level;
-    private String status;
-    private Integer assignedToId;
-    private String message;
-    private String conclusion;
-    private Integer cameraId;
-    private OffsetDateTime createdAt;
-    private SourceTypeEnum sourceType;
 }
