@@ -29,9 +29,9 @@ Cada entrega foi realizada a partir da criação de uma **tag** em cada reposit�
 
 | Sprint | Previsão   | Status         | Histórico           |
 |--------|------------|----------------|---------------------|
-| 01     | 08/09/2025 | ✔️ Iniciado     | [ver relatório TO DO]()   |
-| 02     | 06/10/2025 | ✖️ Não iniciado | [ver relatório TO DO]()   |
-| 03     | 03/11/2025 | ✖️ Não iniciado | [ver relatório TO DO]()   |
+| 01     | 08/09/2025 | ✔️ Iniciado     | [Ver relatório](https://github.com/User-Standart/API-4SEM?tab=readme-ov-file#1%EF%B8%8F%E2%83%A3-sprint-1)   |
+| 02     | 06/10/2025 | ✖️ Não iniciado | [Ver relatório](https://github.com/User-Standart/API-4SEM?tab=readme-ov-file#2%EF%B8%8F%E2%83%A3-sprint-2)   |
+| 03     | 03/11/2025 | ✖️ Não iniciado | [Ver relatório](https://github.com/User-Standart/API-4SEM?tab=readme-ov-file#3%EF%B8%8F%E2%83%A3-sprint-3)   |
 
 ### :clapper: Apresentação Final
 
