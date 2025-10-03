@@ -17,6 +17,10 @@
     <a href="#equipe">Equipe</a>
 </p>
 
+> Status do Projeto: Planejamento da Sprint 2 🟡 <br /><br />
+> Pasta de Documentação: [Link](https://github.com/User-Standart/API-4SEM/tree/main/docs) 📄 <br /><br />
+> Vídeo do Projeto: [A ser feito]() 📽️
+
 <span id="desafio">
 
 ## 🏅 Desafio
@@ -51,6 +55,8 @@ Foi desenvolvido um Sistema Inteligente de Monitoramento e Alerta de Tráfego. E
 | 10 | 🟡 Média | Como agente, quero poder visualizar um alerta específico, para que possa documentar informações sobre este alerta, obter informações sobre como resolver o problema que gerou o alerta e finalizá-lo | 33 | 3 |
 | 11 | 🟢 Baixa | Como gestor, quero ter logs dos alertas gerados, para registro de auditoria e estudo de histórico do comportamento do trânsito | 6 | 3 |
 | 12 | 🟢 Baixa | Como gestor, quero um chat interno no produto para que eu possa consultar informações que estão no banco de forma simplificada | 42 | 3 |
+
+→ [Voltar ao topo](#User-Standart)
 
 ---
 
@@ -140,9 +146,9 @@ Previsão da Sprint: User Story de rank 12 (42 Story Points)
 
 | Sprint | Período | Histórico |
 |-|-|-|
-| SPRINT 1 | 08/09 - 28/09 | [Ver relatório](https://github.com/User-Standart/API-4SEM?tab=readme-ov-file#1%EF%B8%8F%E2%83%A3-sprint-1)   |
-| SPRINT 2 | 06/10 - 26/10 | [Ver relatório](https://github.com/User-Standart/API-4SEM?tab=readme-ov-file#2%EF%B8%8F%E2%83%A3-sprint-2)   |
-| SPRINT 3 | 03/11 - 23/11 | [Ver relatório](https://github.com/User-Standart/API-4SEM?tab=readme-ov-file#3%EF%B8%8F%E2%83%A3-sprint-3)   |
+| SPRINT 1 | 08/09 - 28/09 | [Sprint 1 Docs](https://github.com/User-Standart/API-4SEM/blob/main/docs/sprints/sprint-1/README.md) |
+| SPRINT 2 | 06/10 - 26/10 | [Sprint 2 Docs](https://github.com/User-Standart/API-4SEM/blob/main/docs/sprints/sprint-2/README.md) |
+| SPRINT 3 | 03/11 - 23/11 | [Sprint 3 Docs](https://github.com/User-Standart/API-4SEM/blob/main/docs/sprints/sprint-3/README.md) |
 
 → [Voltar ao topo](#User-Standart)
 
@@ -186,9 +192,9 @@ Previsão da Sprint: User Story de rank 12 (42 Story Points)
 
 |    Função     | Nome                  | LinkedIn & GitHub |
 |---------------|-----------------------|-------------------|
-| Product Owner | Augusto Piatto           | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/augusto-piatto/) [![GitHub](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/augustopiatto) |
+| Product Owner | Augusto Piatto        | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/augusto-piatto/) [![GitHub](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/augustopiatto) |
 | Scrum Master  | Beatriz Sthefanny     | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/beatriz-santos-0b6773220/) [![GitHub](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/BeatrizSantos00) |
-| Dev Team      | Caio Osorio        | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/caio-o-a67224200/) [![Github](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/User-Business) |
+| Dev Team      | Caio Osorio           | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/caio-o-a67224200/) [![Github](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/User-Business) |
 | Dev Team      | Davi Soares           | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/dsf21/) [![Github](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/DaviSFS21) |
 | Dev Team      | João Paulista         | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/joaopaulista/) [![Github](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/joaopaulista) |
 | Dev Team      | Rafael Slivka         | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/rafael-lopes-slivka-07753326a/) [![GitHub](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/rafaslivka) |
@@ -197,26 +203,5 @@ Previsão da Sprint: User Story de rank 12 (42 Story Points)
 | Dev Team      | Victor Ryan           | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/victor-ryan-51738b261) [![GitHub](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/yzvictorr) |
 
 </div>
-
-→ [Voltar ao topo](#User-Standart)
-
----
-
-<span id="protótipo--documentação">
-
-## :desktop_computer: Protótipo & Documentação
-
-Como parte do planejamento do projeto foram criados wireframes para idealização do layout, que, ao ser validado pelo cliente, foram aplicados em um protótipo construído no Figma [clique aqui para acessar o figma](https://www.figma.com/design/lk2lV7XpSpoS1hqHCWC5dp/API-4%C2%BA-Semestre?node-id=0-1&t=sugjN9rY1RMcNUL1-1), possibilitando a interação do usuário com a interface.
-
-> 🔗 **Links gerais**
-> - **API checkpoint:** [clique aqui para acessar](https://github.com/User-Standart/API-4SEM/blob/main/docs/README.md)
-> - **Documentação do software:** [clique aqui para acessar](https://github.com/User-Standart/API-4SEM/blob/main/docs/install/README.md)  
-> - **Manual do usuário:** [clique aqui para acessar TODO]()  
-> - **Links para os repositórios criados:**  
->    - **Frontend:** [acessar User-Standart-Frontend](https://github.com/User-Standart/API-4SEM-FRONTEND/tree/main)  
->    - **Backend:**  [acessar User-Standart-Backend](https://github.com/User-Standart/API-4SEM-BACKEND/tree/main)  
-> - **Documentações das APIs:**  
->    - **Documentação Endpoint:** [acessar Swagger TODO]()  
->    - **Guia de Usuário:** [acessar Guia de usuário TODO]()
 
 → [Voltar ao topo](#User-Standart)
