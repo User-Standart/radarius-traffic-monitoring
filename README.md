@@ -54,27 +54,28 @@ Confira a seguir uma demonstração das funcionalidades para cada tipo de usuár
 
 ### ✅ Requisitos Funcionais
 
-| Código | Descrição | Prioridade | Fator | Sprint |
+| Rank | Prioridade | User Story | Estimativa | Sprint |
 |-|-|-|-|-|
-| RF-1 | Dashboard com informações do trânsito | 🔴 Alta | 1 | 1 |
-| RF-2 | Desenvolver interface com a exibição dos critérios e níveis | 🔴 Alta | 2 | 1 |
-| RF-3 | Desenvolver uma interface contendo mapa com demarcações das áreas de São José dos Campos | 🔴 Alta | 3 | 1 |
-| RF-4 | Permitir editar os níveis dos critérios | 🔴 Alta | 4 | 2 |
-| RF-5 | API para consumo dos dados | 🟡 Média | 5 | 2 |
-| RF-6 | Permitir a geração automática de alertas aos agentes de mobilidade, baseado nos critérios | 🟡 Média | 6 | 2 |
-| RF-7 | Permitir a criação de protocolos associado aos problemas dos alertas | 🟡 Média | 7 | 2 |
-| RF-8 | Permitir a tratativa e resposta dos alertas por parte do agentes de mobilidade | 🟡 Média | 8 | 3 |
-| RF-9 | Permitir definir a área de trabalho dos agentes de mobilidade | 🟢 Baixa | 9 | 2 |
-| RF-10 | Gerar o registro de log a cada iteração do alerta | 🟢 Baixa | 10 | 3 |
+| 1 | 🔴 Alta | Como gestor, quero informações sobre o trânsito em forma de dashboards, gráficos e tabelas para auxiliar minha tomada de decisão na diminuição de trânsito |  | 1 |
+| 2 | 🔴 Alta | Como usuário publico ou como agente, quero uma tela com a documentação dos indicadores para saber o que está sendo avaliado na exibição do mapa da cidade. Como gestor, quero que esta tela ofereça a possibilidade de adicionar, editar e deletar os indicadores, para que eu tenha controle sobre o monitoramento do trânsito da cidade |  | 1 |
+| 3 | 🔴 Alta | Como usuário da plataforma, quero um mapa na tela inicial, que tenha as divisões das zonas da cidade de São José dos Campos, para que eu possa ter uma visão detalhada dos locais que o sistema possui informação |  | 1 |
+| 4 | 🔴 Alta | Como gestor, quero ter a possibilidade de alterar as definições dos níveis referentes a um indicador sem modificar a quantidade de níveis existentes, para que o disparo de alertas ocorram em momentos controlados |  | 2 |
+| 5 | 🟡 Média | Como gestor, quero que as zonas tenham informações das principais vias demarcadas e que apresentem o congestionamento dessa via, para que eu possa atuar de forma mais rápida e precisa em pontos críticos da cidade |  | 2 |
+| 5 | 🟡 Média | Como gestor, quero poder associar um usuário agente a uma zona ou usuário gestor a uma zona, para que recebam informações específicas e centralizadas para atuar |  | 2 |
+| 6 | 🟡 Média | Como agente e como gestor, quero receber alertas quando houver mudança nos níveis de qualquer indicador, para que eu tenha noção de quando o trânsito piorar e possa tomar medidas para solucionar o problema |  | 2 |
+| 7 | 🟡 Média | Como gestor, quero poder criar “causas raíz” para alertas disparados e poder criar protocolos para essas “causas raíz”, para que o agente tenha uma orientação de como resolver os alertas que surgirem |  | 2 |
+| 8 | 🟢 Baixa | Como agente, quero poder visualizar um alerta específico, para que possa documentar informações sobre este alerta, obter informações sobre como resolver o problema que gerou o alerta e finalizá-lo |  | 3 |
+| 9 | 🟢 Baixa | Como gestor, quero um chat interno no produto para que eu possa consultar informações que estão no banco de forma simplificada |  | 3 |
+| 10 | 🟢 Baixa | Como gestor, quero ter logs dos alertas gerados, para registro de auditoria e estudo de histórico do comportamento do trânsito |  | 3 |
 
 ### ✔️ Requisitos Não Funcionais
 
-| Código | Descrição |
+| Rank | Descrição |
 |-|-|
-| RNF-1 | Manual do Usuário |
-| RNF-2 | Guia de Instalação |
-| RNF-3 | Documentação da API |
-| RNF-4 | Modelagem do Banco de Dados |
+| 1 | Modelagem do Banco de Dados |
+| 2 | Manual do Usuário |
+| 3 | Guia de Instalação |
+| 4 | Documentação da API |
 
 ---
 
@@ -82,47 +83,51 @@ Confira a seguir uma demonstração das funcionalidades para cada tipo de usuár
 
 ### 1️⃣ Sprint 1
 
-[Spring Planning](https://github.com/User-Standart/API-4SEM/tree/main/docs#1%EF%B8%8F%E2%83%A3-sprint-1)
+Capacidade estimada da Equipe na Sprint: 135 Story points (horas)
 
-| Épico | ID | Sprint | Descrição |
-|-|-|-|-|
-| 1 | US-1 | Sprint 1 | Critérios de mobilidade definidos |
-| 2 | US-2 | Sprint 1 | Níveis de alerta por critério |
-| 5 | US-3 | Sprint 1 | Página “Níveis” por região |
-| 6 | US-4 | Sprint 1 | Dashboard dos corredores principais |
-| 7 | US-5 | Sprint 1 | Mapa público com níveis por área |
+Meta da Sprint: User Stories de rank - e rank - (total de - Story Points)
+
+Previsão da Sprint: User Story de rank (- Story Points)
+
+[Spring Planning - DoR / DoD](https://github.com/User-Standart/API-4SEM/tree/main/docs#1%EF%B8%8F%E2%83%A3-sprint-1)
+
+| Rank | Prioridade | User Story | Estimativa | Sprint |
+|-|-|-|-|-|
+| 1 |  | Critérios de mobilidade definidos |  | 1 |
+| 2 |  | Níveis de alerta por critério |  | 1 |
+| 5 |  | Página “Níveis” por região |  | 1 |
+| 6 |  | Dashboard dos corredores principais |  | 1 |
+| 7 |  | Mapa público com níveis por área |  | 1 |
 
 ### 2️⃣ Sprint 2
 
-[Spring Planning](https://github.com/User-Standart/API-4SEM/tree/main/docs#2%EF%B8%8F%E2%83%A3-sprint-2)
+Capacidade estimada da Equipe na Sprint: - Story points (horas)
 
-| Épico | ID | Sprint | Descrição |
-|-|-|-|-|
-| 3 | US-7 | Sprint 2 | Recebimento e gestão de alertas |
-| 8 | US-6 | Sprint 2 | Gráficos pré-definidos com filtros |
+Meta da Sprint: User Stories de rank - e rank - (total de - Story Points)
+
+Previsão da Sprint: User Story de rank (- Story Points)
+
+[Spring Planning - DoR / DoD](https://github.com/User-Standart/API-4SEM/tree/main/docs#2%EF%B8%8F%E2%83%A3-sprint-2)
+
+| Rank | Prioridade | User Story | Estimativa | Sprint |
+|-|-|-|-|-|
+| 3 |  | Recebimento e gestão de alertas |  | 2 |
+| 8 |  | Gráficos pré-definidos com filtros |  | 2 |
 
 ### 3️⃣ Sprint 3
 
-[Spring Planning](https://github.com/User-Standart/API-4SEM/tree/main/docs#3%EF%B8%8F%E2%83%A3-sprint-3)
+Capacidade estimada da Equipe na Sprint: - Story points (horas)
 
-| Épico | ID | Sprint | Descrição |
-|-|-|-|-|
-| 4 | US-9 | Sprint 3 | Níveis de acesso por perfil |
-| 9 | US-8 | Sprint 3 | Chat com os dados (LN) |
+Meta da Sprint: User Stories de rank - e rank - (total de - Story Points)
 
-## 👥 User Stories
+Previsão da Sprint: User Story de rank (- Story Points)
 
-| Épico | ID | Prioridade | Sprint | Descrição |
+[Spring Planning - DoR / DoD](https://github.com/User-Standart/API-4SEM/tree/main/docs#3%EF%B8%8F%E2%83%A3-sprint-3)
+
+| Rank | Prioridade | User Story | Estimativa | Sprint |
 |-|-|-|-|-|
-| 1 | US-1 | Alta | Sprint 1 | Critérios de mobilidade definidos |
-| 2 | US-2 | Alta | Sprint 1 | Níveis de alerta por critério |
-| 3 | US-7 | Alta | Sprint 2 | Recebimento e gestão de alertas |
-| 4 | US-9 | Alta | Sprint 3 | Níveis de acesso por perfil |
-| 5 | US-3 | Média | Sprint 1 | Página “Níveis” por região |
-| 6 | US-4 | Média | Sprint 1 | Dashboard dos corredores principais |
-| 7 | US-5 | Baixa | Sprint 1 | Mapa público com níveis por área |
-| 8 | US-6 | Baixa | Sprint 2 | Gráficos pré-definidos com filtros |
-| 9 | US-8 | Baixa | Sprint 3 | Chat com os dados (LN) |
+| 4 |  | Níveis de acesso por perfil |  | 3 | 
+| 9 |  | Chat com os dados (LN) |  | 3 |
 
 → [Voltar ao topo](#topo)
 
