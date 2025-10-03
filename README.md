@@ -102,9 +102,9 @@ Previsão da Sprint: User Story de rank 3 (42 Story Points)
 
 Capacidade estimada da Equipe na Sprint: 116 Story points (horas)
 
-Meta da Sprint: User Stories de rank 7 e rank 9 (total de 19 Story Points)
+Meta da Sprint: User Stories de rank 7 e rank 9 (total de 57 Story Points)
 
-Previsão da Sprint: User Story de rank 10 (11 Story Points)
+Previsão da Sprint: User Story de rank 10 (33 Story Points)
 
 [Spring Planning - DoR / DoD](https://github.com/User-Standart/API-4SEM/tree/main/docs#2%EF%B8%8F%E2%83%A3-sprint-2)
 
@@ -118,9 +118,9 @@ Previsão da Sprint: User Story de rank 10 (11 Story Points)
 
 Capacidade estimada da Equipe na Sprint: 116 Story points (horas)
 
-Meta da Sprint: User Stories de rank 4, rank 5, rank 6, rank 8 e rank 11 (total de 38 Story Points)
+Meta da Sprint: User Stories de rank 4, rank 5, rank 6, rank 8 e rank 11 (total de 76 Story Points)
 
-Previsão da Sprint: User Story de rank 12 (21 Story Points)
+Previsão da Sprint: User Story de rank 12 (42 Story Points)
 
 [Spring Planning - DoR / DoD](https://github.com/User-Standart/API-4SEM/tree/main/docs#3%EF%B8%8F%E2%83%A3-sprint-3)
 
