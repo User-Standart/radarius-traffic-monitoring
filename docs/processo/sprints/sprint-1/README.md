@@ -18,6 +18,8 @@
 
 ## 🏅 Desafio
 
+Implementar a base do sistema, permitindo que gestores e usuários acompanhem indicadores de mobilidade urbana através de dashboards interativos, mapas zonais e documentação técnica dos indicadores. Foi necessário garantir uma interface e um fluxo claro para garantir a evolução do sistema sem retrabalhos. 
+
 <span id="user-stories">
 
 ## 📋 User Stories
@@ -45,6 +47,8 @@ Previsão da Sprint: User Story de rank 3 (42 Story Points)
 <span id="burndown">
 
 ## 📉 Burndown
+
+<img src="../../../media/burndown-sprint-1.png" />
 
 <span id="equipe">
 
