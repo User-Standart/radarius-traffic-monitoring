@@ -99,13 +99,13 @@ Foi desenvolvido um Sistema Inteligente de Monitoramento e Alerta de Tráfego. E
 
 <span id="tecnologias">
 
-## 🛠️ Tecnologias
+## 💻 Tecnologias
 
 <p align="center">
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
   <img src="https://img.shields.io/badge/Java-orange?style=for-the-badge&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" />
   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" />
   <img src="https://img.shields.io/badge/VS_Code-CED4DA?style=for-the-badge&logo=visual-studio-code&logoColor=0078D4" />
@@ -122,6 +122,8 @@ Foi desenvolvido um Sistema Inteligente de Monitoramento e Alerta de Tráfego. E
 <span id="manual-de-instalacao">
 
 ## 📖 Manual de instalação
+
+TODO
 
 → [Voltar ao topo](#User-Standart)
 
