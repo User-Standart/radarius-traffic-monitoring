@@ -12,17 +12,41 @@
     <a href="#equipe">Equipe</a>
 </p>
 
-> Status da Sprint: Concluída ✅
+> Status da Sprint: Não iniciada
+
+<span id="desafio">
 
 ## 🏅 Desafio
 
+<span id="user-stories">
+
 ## 📋 User Stories
+
+Capacidade estimada da Equipe na Sprint: 116 Story points (horas)
+
+Meta da Sprint: User Stories de rank 7 e rank 9 (total de 57 Story Points)
+
+Previsão da Sprint: User Story de rank 10 (33 Story Points)
+
+| Rank | Prioridade | User Story | Story Points | Sprint |
+|-|-|-|-|-|
+| 7 | 🟡 Média | Como agente e como gestor, quero receber alertas quando houver mudança nos níveis de qualquer indicador, para que eu tenha noção de quando o trânsito piorar e possa tomar medidas para solucionar o problema | 39 | 2 |
+| 9 | 🟡 Média | Como gestor, quero poder criar “causas raíz” para alertas disparados e poder criar protocolos para essas “causas raíz”, para que o agente tenha uma orientação de como resolver os alertas que surgirem | 18 | 2 |
+| 10 | 🟡 Média | Como agente, quero poder visualizar um alerta específico, para que possa documentar informações sobre este alerta, obter informações sobre como resolver o problema que gerou o alerta e finalizá-lo | 33 | 3 |
+
+<span id="dor">
 
 ## 🏃‍ DoR
 
+<span id="dod">
+
 ## 🏆 DoD
 
+<span id="burndown">
+
 ## 📉 Burndown
+
+<span id="equipe">
 
 ## 👥 Equipe
 
