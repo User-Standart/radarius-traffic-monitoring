@@ -18,6 +18,8 @@
 
 ## 🏅 Desafio
 
+Implementar funcionalidades que aprimorem a experiência do usuário durante o recebimento de informações do trânsito, garantindo maior confiabilidade e controle nas decisões. Nesta sprint será feita o gerenciamento de alertas automáticos, permitindo que o sistema faça os disparos para os usuários corretos e que estes usuários recebam e possam interagir com os alertas, podendo realizar ações de definição de "causa raíz" e acesso ao protocolo correspondente.
+
 <span id="user-stories">
 
 ## 📋 User Stories
@@ -42,6 +44,9 @@ Previsão da Sprint: User Story de rank 10 (33 Story Points)
 | :-------------------------------: | ------------------------------------------------------------------------------------------------- |
 |       Clareza na Descrição        | A User Story está escrita no formato “Como [persona], quero [ação] para que [objetivo]”           |
 | Critérios de Aceitação Definidos  | A história possui critérios objetivos que indicam o que é necessário para considerá-la concluída. |
+|   Referência Visual no Figma      | O protótipo correspondente está disponível e vinculado (quando aplicável ao front-end).           |
+|     Escopo Técnico Validado       | Está claro se a história envolve frontend, backend ou ambos.                                      |
+|    Perfil de Acesso Definido      | O tipo de usuário (comum ou administrador) está claramente definido para cada história.           |
 |    Compreensão Compartilhada      | Toda a equipe (incluindo PO e devs) compreende o propósito da história.                           |
 |            Estímável              | A história foi pontuada no Planning Poker ou tem uma estimativa clara.                            |
 |       Documentos de Apoio         | Se necessário, mockups, fluxos ou modelos de dados estão anexados ou referenciados.               |
@@ -69,7 +74,9 @@ Previsão da Sprint: User Story de rank 10 (33 Story Points)
 
 ## 📉 Burndown
 
-<img src="../../../media/em-construcao.jpeg" />
+<div align="center">
+<img height="300" alt="construcao" src="../../../media/em-construcao.jpeg" />
+</div>
 
 <span id="equipe">
 
