@@ -69,7 +69,7 @@ Previsão da Sprint: User Story de rank 10 (33 Story Points)
 
 ## 📉 Burndown
 
-<img src="" />
+<img src="../../../media/em-construcao.jpeg" />
 
 <span id="equipe">
 
