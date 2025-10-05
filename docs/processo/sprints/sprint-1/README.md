@@ -40,9 +40,31 @@ Previsão da Sprint: User Story de rank 3 (42 Story Points)
 
 ## 🏃‍ DoR
 
+|             Critério             | Descrição                                                                                         |
+| :------------------------------: | ------------------------------------------------------------------------------------------------- |
+|       Clareza na Descrição       | A User Story está escrita no formato “Como [persona], quero [ação] para que [objetivo]”           |
+| Critérios de Aceitação Definidos | A história possui critérios objetivos que indicam o que é necessário para considerá-la concluída. |
+|    Compreensão Compartilhada     | Toda a equipe (incluindo PO e devs) compreende o propósito da história.                           |
+|            Estímável             | A história foi pontuada no Planning Poker ou tem uma estimativa clara.                            |
+|       Documentos de Apoio        | Se necessário, mockups, fluxos ou modelos de dados estão anexados ou referenciados.               |
+|    Validação com PO e equipe     | A história foi discutida em refinamento ou planning e validada com o time técnico.                |
+|   Critérios Técnicos Acordados   | As necessidades de Frontend e Backend foram claramente separadas (quando aplicável).              |
+
 <span id="dod">
 
 ## 🏆 DoD
+
+|                 Critério                 | Descrição                                                                                                        |
+| :--------------------------------------: | ---------------------------------------------------------------------------------------------------------------- |
+|     Critérios de Aceitação atendidos     | Todos os cenários definidos na US foram implementados e validados com sucesso.                                   |
+| Cenários de Teste executados e aprovados | Todos os cenários descritos foram validados manualmente.                                                         |
+|      Feedback Visual Implementado        | Funcionalidades como pop-ups, mensagens de erro ou barras de progresso estão claras e acessíveis ao usuário.     |
+|        Fluxo Seguro e Controlado         | Não há caminhos quebrados nem submissões incoerentes no fluxo de avaliação ou navegação.                         |
+|      Código Revisado (Code Review)       | O código foi revisado por pelo menos um colega de equipe.                                                        |
+|     Documentação Interna Atualizada      | Foi atualizado o que for necessário: API, estrutura de dados, endpoints, etc.                                    |
+|  Integração Com o Restante da Aplicação  | A funcionalidade foi testada junto com o fluxo completo do sistema (Ex: Envio → Resposta → Avaliação → Escolha). |
+|             Validação do PO              | O PO testou e confirmou que a funcionalidade atende ao esperado.                                                 |
+|            Pronto para deploy            | A funcionalidade pode ser entregue ao ambiente de produção/testes finais sem pendências.                         |
 
 <span id="burndown">
 
