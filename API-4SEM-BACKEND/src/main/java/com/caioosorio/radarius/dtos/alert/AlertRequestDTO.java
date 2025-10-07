@@ -1,8 +1,6 @@
 package com.caioosorio.radarius.dtos.alert;
 
 import com.caioosorio.radarius.enums.SourceTypeEnum;
-import lombok.Data;
-import java.time.OffsetDateTime;
 
 public class AlertRequestDTO {
 
@@ -16,7 +14,6 @@ public class AlertRequestDTO {
     private Integer cameraId;
     private SourceTypeEnum sourceType;
 
-    // Getters e Setters
     public Integer getCriterionId() { return criterionId; }
     public void setCriterionId(Integer criterionId) { this.criterionId = criterionId; }
 

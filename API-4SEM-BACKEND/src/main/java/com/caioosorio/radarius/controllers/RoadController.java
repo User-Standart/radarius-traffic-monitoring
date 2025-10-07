@@ -2,7 +2,7 @@ package com.caioosorio.radarius.controllers;
 
 import com.caioosorio.radarius.dtos.road.RoadRequestDTO;
 import com.caioosorio.radarius.dtos.road.RoadResponseDTO;
-import data.radarius.radarius.services.RoadService;
+import com.caioosorio.radarius.services.RoadService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,12 +19,12 @@ public class RoadController {
     }
 
     @GetMapping
-    public ResponseEntity<List<RoadResponseDTO>> getAll() {
+    public ResponseEntity<List<RoadResponseDTO>> findAll() {
         return ResponseEntity.ok(roadService.findAll());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<RoadResponseDTO> getById(@PathVariable Integer id) {
+    public ResponseEntity<RoadResponseDTO> findById(@PathVariable Integer id) {
         return ResponseEntity.ok(roadService.findById(id));
     }
 

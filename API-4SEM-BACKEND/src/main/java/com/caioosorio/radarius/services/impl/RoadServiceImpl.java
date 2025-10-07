@@ -1,7 +1,7 @@
 package com.caioosorio.radarius.services.impl;
 
-import com.caioosorio.radarius.dto.RoadRequestDTO;
-import com.caioosorio.radarius.dto.RoadResponseDTO;
+import com.caioosorio.radarius.dtos.road.RoadRequestDTO;
+import com.caioosorio.radarius.dtos.road.RoadResponseDTO;
 import com.caioosorio.radarius.entity.Road;
 import com.caioosorio.radarius.repositories.RoadRepository;
 import com.caioosorio.radarius.services.RoadService;

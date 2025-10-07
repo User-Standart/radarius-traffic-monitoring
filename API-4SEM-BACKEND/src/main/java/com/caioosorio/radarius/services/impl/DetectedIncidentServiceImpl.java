@@ -1,13 +1,13 @@
 package com.caioosorio.radarius.services.impl;
 
-import com.caioosorio.radarius.dtos.DetectedIncidentRequestDTO;
-import com.caioosorio.radarius.dtos.DetectedIncidentResponseDTO;
+import com.caioosorio.radarius.dtos.detectedincident.DetectedIncidentRequestDTO;
+import com.caioosorio.radarius.dtos.detectedincident.DetectedIncidentResponseDTO;
 import com.caioosorio.radarius.entity.Alert;
 import com.caioosorio.radarius.entity.DetectedIncident;
-import com.caioosorio.radarius.entity.User;
+import com.caioosorio.radarius.entity.Person;
 import com.caioosorio.radarius.repositories.AlertRepository;
 import com.caioosorio.radarius.repositories.DetectedIncidentRepository;
-import com.caioosorio.radarius.repositories.UserRepository;
+import com.caioosorio.radarius.repositories.PersonRepository;
 import com.caioosorio.radarius.services.DetectedIncidentService;
 import org.springframework.stereotype.Service;
 
@@ -19,21 +19,21 @@ public class DetectedIncidentServiceImpl implements DetectedIncidentService {
 
     private final DetectedIncidentRepository repository;
     private final AlertRepository alertRepository;
-    private final UserRepository userRepository;
+    private final PersonRepository personRepository;
 
     public DetectedIncidentServiceImpl(DetectedIncidentRepository repository,
                                        AlertRepository alertRepository,
-                                       UserRepository userRepository) {
+                                       PersonRepository personRepository) {
         this.repository = repository;
         this.alertRepository = alertRepository;
-        this.userRepository = userRepository;
+        this.personRepository = personRepository;
     }
 
     private DetectedIncidentResponseDTO toDTO(DetectedIncident incident) {
         DetectedIncidentResponseDTO dto = new DetectedIncidentResponseDTO();
         dto.setIncidentId(incident.getIncidentId());
         dto.setAlertId(incident.getAlert() != null ? incident.getAlert().getAlertId() : null);
-        dto.setUserId(incident.getUser() != null ? incident.getUser().getUserId() : null);
+        dto.setUserId(incident.getUser() != null ? incident.getUser().getPersonId() : null);
         dto.setIncidentType(incident.getIncidentType());
         dto.setCreatedAt(incident.getCreatedAt());
         return dto;
@@ -50,9 +50,9 @@ public class DetectedIncidentServiceImpl implements DetectedIncidentService {
         }
 
         if (dto.getUserId() != null) {
-            User user = userRepository.findById(dto.getUserId())
+            Person person = personRepository.findById(dto.getUserId())
                     .orElseThrow(() -> new RuntimeException("User not found with id " + dto.getUserId()));
-            entity.setUser(user);
+            entity.setUser(person);
         }
     }
 

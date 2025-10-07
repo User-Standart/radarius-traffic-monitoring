@@ -1,6 +1,5 @@
 package com.caioosorio.radarius.entity;
 
-
 import com.caioosorio.radarius.enums.SourceTypeEnum;
 import jakarta.persistence.*;
 import java.time.OffsetDateTime;

@@ -1,12 +1,13 @@
 package com.caioosorio.radarius.services.impl;
 
-import com.caioosorio.radarius.dto.ProtocolRequestDTO;
-import com.caioosorio.radarius.dto.ProtocolResponseDTO;
+import com.caioosorio.radarius.dtos.protocol.ProtocolRequestDTO;
+import com.caioosorio.radarius.dtos.protocol.ProtocolResponseDTO;
 import com.caioosorio.radarius.entity.Protocol;
-import com.caioosorio.radarius.entity.User;
+import com.caioosorio.radarius.entity.Person;
 import com.caioosorio.radarius.repositories.ProtocolRepository;
-import com.caioosorio.radarius.repositories.UserRepository;
+import com.caioosorio.radarius.repositories.PersonRepository;
 import com.caioosorio.radarius.services.ProtocolService;
+import org.apache.catalina.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,11 +17,11 @@ import java.util.stream.Collectors;
 public class ProtocolServiceImpl implements ProtocolService {
 
     private final ProtocolRepository repository;
-    private final UserRepository userRepository;
+    private final PersonRepository personRepository;
 
-    public ProtocolServiceImpl(ProtocolRepository repository, UserRepository userRepository) {
+    public ProtocolServiceImpl(ProtocolRepository repository, PersonRepository personRepository) {
         this.repository = repository;
-        this.userRepository = userRepository;
+        this.personRepository = personRepository;
     }
 
     private ProtocolResponseDTO toDTO(Protocol protocol) {
@@ -28,7 +29,7 @@ public class ProtocolServiceImpl implements ProtocolService {
         dto.setProtocolId(protocol.getProtocolId());
         dto.setName(protocol.getName());
         dto.setCreatedAt(protocol.getCreatedAt());
-        dto.setCreatedById(protocol.getCreatedBy() != null ? protocol.getCreatedBy().getUserId() : null);
+        dto.setCreatedById(protocol.getCreatedBy() != null ? protocol.getCreatedBy().getPersonId() : null);
         return dto;
     }
 
@@ -37,9 +38,9 @@ public class ProtocolServiceImpl implements ProtocolService {
         entity.setCreatedAt(dto.getCreatedAt());
 
         if (dto.getCreatedById() != null) {
-            User user = userRepository.findById(dto.getCreatedById())
-                    .orElseThrow(() -> new RuntimeException("User not found with id " + dto.getCreatedById()));
-            entity.setCreatedBy(user);
+            Person person = personRepository.findById(dto.getCreatedById())
+                    .orElseThrow(() -> new RuntimeException("Person not found with id " + dto.getCreatedById()));
+            entity.setCreatedBy(person);
         }
     }
 
