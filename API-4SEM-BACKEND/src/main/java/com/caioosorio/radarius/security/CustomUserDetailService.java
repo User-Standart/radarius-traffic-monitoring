@@ -1,8 +1,9 @@
 package com.caioosorio.radarius.security;
 
 import com.caioosorio.radarius.entity.Person;
-import com.caioosorio.radarius.services.PersonService;
+import com.caioosorio.radarius.service.PersonService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -19,7 +20,7 @@ public class CustomUserDetailService implements UserDetailsService {
                 new UsernameNotFoundException("User not found with email: " + email));
         return UserPrincipal
                 .builder()
-                .userId(person.getPersonId())
+                .userId(person.getId())
                 .email(person.getEmail())
                 .password(person.getPassword())
                 .build();
