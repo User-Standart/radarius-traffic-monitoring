@@ -126,7 +126,7 @@ Foi desenvolvido um Sistema Inteligente de Monitoramento e Alerta de Tráfego. E
 
 ## 📖 Manual de instalação
 
-TODO
+<img height="300" alt="construcao" src="./docs/media/em-construcao.jpeg" />
 
 → [Voltar ao topo](#User-Standart)
 
@@ -136,7 +136,7 @@ TODO
 
 ## 📘 Manual do usuário
 
-TODO
+<img height="300" alt="construcao" src="./docs/media/em-construcao.jpeg" />
 
 → [Voltar ao topo](#User-Standart)
 
@@ -146,7 +146,7 @@ TODO
 
 ## 📓 Documentação API
 
-TODO
+<img height="300" alt="construcao" src="./docs/media/em-construcao.jpeg" />
 
 → [Voltar ao topo](#User-Standart)
 
