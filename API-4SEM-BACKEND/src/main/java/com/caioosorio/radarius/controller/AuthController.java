@@ -1,4 +1,4 @@
-package com.caioosorio.radarius.controllers;
+package com.caioosorio.radarius.controller;
 
 import com.caioosorio.radarius.dto.login.LoginRequestDTO;
 import com.caioosorio.radarius.dto.login.LoginResponseDTO;
