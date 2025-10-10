@@ -2,8 +2,10 @@ package com.caioosorio.radarius.service;
 
 import com.caioosorio.radarius.dto.person.PersonRequestDTO;
 import com.caioosorio.radarius.dto.person.PersonResponseDTO;
+import com.caioosorio.radarius.entity.Person;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface PersonService {
     PersonResponseDTO create(PersonRequestDTO dto);
@@ -11,4 +13,5 @@ public interface PersonService {
     void delete(Integer id);
     PersonResponseDTO findById(Integer id);
     List<PersonResponseDTO> findAll();
+    Optional<Person> findByEmail(String email);
 }
