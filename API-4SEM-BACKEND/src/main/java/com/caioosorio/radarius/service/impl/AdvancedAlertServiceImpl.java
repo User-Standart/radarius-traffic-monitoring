@@ -5,6 +5,7 @@ import com.caioosorio.radarius.entity.*;
 import com.caioosorio.radarius.enums.SourceTypeEnum;
 import com.caioosorio.radarius.repository.*;
 import com.caioosorio.radarius.service.AdvancedAlertService;
+import com.caioosorio.radarius.service.AlertLogService;
 import com.caioosorio.radarius.service.CriterionCalculationService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,22 +24,16 @@ public class AdvancedAlertServiceImpl implements AdvancedAlertService {
     private AlertRepository alertRepository;
 
     @Autowired
-    private CriterionCalculationService criterionCalculationService;
+    private AlertLogService alertLogService;
 
     @Autowired
-    private CriterionRepository criterionRepository;
+    private CriterionCalculationService criterionCalculationService;
 
     @Autowired
     private CameraRepository cameraRepository;
 
     @Autowired
     private PersonRepository personRepository;
-
-    @Autowired
-    private RoadRepository roadRepository;
-
-    @Autowired
-    private RegionRepository regionRepository;
 
     @Override
     @Transactional
@@ -173,7 +168,9 @@ public class AdvancedAlertServiceImpl implements AdvancedAlertService {
             alert.setLevel(newLevel.shortValue());
             alert.setMessage(buildAlertDescription(calculation));
             
-            return alertRepository.save(alert);
+            Alert savedAlert = alertRepository.save(alert);
+            alertLogService.create(newLevel.shortValue(), calculation.getCriterion(), calculation.getCamera().getRegion());
+            return savedAlert;
         } else {
             // Create new alert
             return createNewAlert(calculation, sourceType);
@@ -202,7 +199,9 @@ public class AdvancedAlertServiceImpl implements AdvancedAlertService {
             alert.setAssignedTo(responsiblePerson);
         }
         
-        return alertRepository.save(alert);
+        Alert savedAlert = alertRepository.save(alert);
+        alertLogService.create(alert.getLevel(), calculation.getCriterion(), calculation.getCamera().getRegion());
+        return savedAlert;
     }
 
     private String buildAlertDescription(CriterionCalculationResult calculation) {
@@ -238,7 +237,8 @@ public class AdvancedAlertServiceImpl implements AdvancedAlertService {
         
         for (Alert alert : oldAlerts) {
             alert.setClosedAt(LocalDateTime.now());
-            alertRepository.save(alert);
+            Alert savedAlert = alertRepository.save(alert);
+            alertLogService.create((short)0, alert.getCriterion(), alert.getRegion()); // Nível 0 indica alerta desativado
         }
         
         if (!oldAlerts.isEmpty()) {
