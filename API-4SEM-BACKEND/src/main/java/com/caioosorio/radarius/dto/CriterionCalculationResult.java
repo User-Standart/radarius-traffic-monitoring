@@ -2,6 +2,7 @@ package com.caioosorio.radarius.dto;
 
 import com.caioosorio.radarius.entity.Camera;
 import com.caioosorio.radarius.entity.Criterion;
+import com.caioosorio.radarius.entity.Region;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -10,6 +11,7 @@ public class CriterionCalculationResult {
     
     private Criterion criterion;
     private Camera camera;
+    private Region region;
     private BigDecimal calculatedValue;
     private Integer calculatedLevel;
     private LocalDateTime calculationTime;
@@ -18,11 +20,12 @@ public class CriterionCalculationResult {
 
     public CriterionCalculationResult() {}
 
-    public CriterionCalculationResult(Criterion criterion, Camera camera, 
+    public CriterionCalculationResult(Criterion criterion, Camera camera, Region region,
                                     BigDecimal calculatedValue, Integer calculatedLevel, 
                                     Integer sampleSize, String description) {
         this.criterion = criterion;
         this.camera = camera;
+        this.region = region;
         this.calculatedValue = calculatedValue;
         this.calculatedLevel = calculatedLevel;
         this.calculationTime = LocalDateTime.now();
@@ -51,4 +54,7 @@ public class CriterionCalculationResult {
 
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
+
+    public Region getRegion() { return region; }
+    public void setRegion(Region region) { this.region = region; }
 }
