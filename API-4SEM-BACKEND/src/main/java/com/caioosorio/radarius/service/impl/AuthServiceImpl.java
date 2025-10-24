@@ -5,7 +5,6 @@ import com.caioosorio.radarius.security.JwtIssuer;
 import com.caioosorio.radarius.security.UserPrincipal;
 import com.caioosorio.radarius.service.AuthService;
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
