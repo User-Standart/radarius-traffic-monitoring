@@ -1,6 +1,8 @@
 package com.caioosorio.radarius.repository;
 
 import com.caioosorio.radarius.entity.Alert;
+import com.caioosorio.radarius.entity.Criterion;
+import com.caioosorio.radarius.entity.Region;
 import com.caioosorio.radarius.enums.SourceTypeEnum;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -64,4 +66,7 @@ public interface AlertRepository extends JpaRepository<Alert, Integer> {
     
     @Query("SELECT a FROM Alert a WHERE a.closedAt IS NULL AND a.level = :level")
     List<Alert> findActiveAlertsByLevel(@Param("level") Integer level);
+    
+    Optional<Alert> findTopByCriterionAndRegionAndClosedAtIsNullOrderByCreatedAtDesc(
+        Criterion criterion, Region region);
 }
