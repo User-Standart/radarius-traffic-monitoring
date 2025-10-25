@@ -2,7 +2,6 @@ package com.caioosorio.radarius.service.impl;
 
 import com.caioosorio.radarius.dto.protocol.ProtocolRequestDTO;
 import com.caioosorio.radarius.dto.protocol.ProtocolResponseDTO;
-import com.caioosorio.radarius.entity.Person;
 import com.caioosorio.radarius.entity.Protocol;
 import com.caioosorio.radarius.repository.PersonRepository;
 import com.caioosorio.radarius.repository.ProtocolRepository;

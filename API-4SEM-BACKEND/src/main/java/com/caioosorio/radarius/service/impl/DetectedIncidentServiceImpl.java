@@ -2,9 +2,7 @@ package com.caioosorio.radarius.service.impl;
 
 import com.caioosorio.radarius.dto.detectedincident.DetectedIncidentRequestDTO;
 import com.caioosorio.radarius.dto.detectedincident.DetectedIncidentResponseDTO;
-import com.caioosorio.radarius.entity.Alert;
 import com.caioosorio.radarius.entity.DetectedIncident;
-import com.caioosorio.radarius.entity.Person;
 import com.caioosorio.radarius.repository.AlertRepository;
 import com.caioosorio.radarius.repository.DetectedIncidentRepository;
 import com.caioosorio.radarius.repository.PersonRepository;
