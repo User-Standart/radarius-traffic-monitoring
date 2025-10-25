@@ -1,13 +1,15 @@
 package com.caioosorio.radarius.repository;
 
 import com.caioosorio.radarius.entity.Alert;
+import com.caioosorio.radarius.entity.Criterion;
+import com.caioosorio.radarius.entity.Region;
+import com.caioosorio.radarius.enums.SourceTypeEnum;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -42,4 +44,29 @@ public interface AlertRepository extends JpaRepository<Alert, Integer> {
             Pageable pageable);
 
     Optional<Alert> findFirstByCriterionIdAndRegionIdOrderByCreatedAtDesc(Integer criterionId, Integer regionId);
+    
+    Optional<Alert> findTopBySourceTypeAndCriterionIdAndCameraIdAndRegionIdOrderByCreatedAtDesc(
+        SourceTypeEnum sourceType, Integer criterionId, Integer cameraId, Integer regionId);
+    
+    @Query("SELECT a FROM Alert a WHERE a.sourceType = :sourceType AND a.criterion.id = :criterionId AND a.camera.id = :cameraId AND a.region.id = :regionId AND a.closedAt IS NULL ORDER BY a.createdAt DESC")
+    Optional<Alert> findActiveAlertBySourceTypeAndCriterionIdAndCameraIdAndRegionId(
+        @Param("sourceType") SourceTypeEnum sourceType, 
+        @Param("criterionId") Integer criterionId, 
+        @Param("cameraId") Integer cameraId, 
+        @Param("regionId") Integer regionId);
+    
+    @Query("SELECT a FROM Alert a WHERE a.closedAt IS NULL AND a.createdAt < :threshold")
+    List<Alert> findActiveAlertsOlderThan(@Param("threshold") LocalDateTime threshold);
+    
+    @Query("SELECT a FROM Alert a WHERE a.closedAt IS NULL")
+    List<Alert> findActiveAlerts();
+    
+    @Query("SELECT a FROM Alert a WHERE a.closedAt IS NULL AND a.region.id = :regionId")
+    List<Alert> findActiveAlertsByRegionId(@Param("regionId") Integer regionId);
+    
+    @Query("SELECT a FROM Alert a WHERE a.closedAt IS NULL AND a.level = :level")
+    List<Alert> findActiveAlertsByLevel(@Param("level") Integer level);
+    
+    Optional<Alert> findTopByCriterionAndRegionAndClosedAtIsNullOrderByCreatedAtDesc(
+        Criterion criterion, Region region);
 }

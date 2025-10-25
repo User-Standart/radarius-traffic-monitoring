@@ -1,6 +1,7 @@
 package com.caioosorio.radarius.entity;
 
 import com.caioosorio.radarius.enums.SourceTypeEnum;
+import com.caioosorio.radarius.listeners.AlertEntityListener;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,6 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "alert")
+@EntityListeners(AlertEntityListener.class)
 public class Alert {
 
     @Id
