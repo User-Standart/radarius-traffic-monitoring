@@ -2,6 +2,7 @@ package com.caioosorio.radarius.repository;
 
 import com.caioosorio.radarius.entity.Alert;
 import com.caioosorio.radarius.entity.AlertLog;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -15,4 +16,8 @@ public interface AlertLogRepository extends JpaRepository<AlertLog, Integer> {
     List<AlertLog> findByAlert(Alert alert);
     
     Optional<AlertLog> findTopByAlertOrderByCreatedAtDesc(Alert alert);
+    
+    List<AlertLog> findTop10ByOrderByCreatedAtDesc();
+    
+    List<AlertLog> findByRegionIdOrderByCreatedAtDesc(Integer regionId, Pageable pageable);
 }
