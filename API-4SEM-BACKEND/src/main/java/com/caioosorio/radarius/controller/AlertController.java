@@ -2,6 +2,7 @@ package com.caioosorio.radarius.controller;
 
 import com.caioosorio.radarius.dto.alert.AlertRequestDTO;
 import com.caioosorio.radarius.dto.alert.AlertResponseDTO;
+import com.caioosorio.radarius.dto.alertlog.AlertLogRecentResponseDTO;
 import com.caioosorio.radarius.service.AlertService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -45,8 +46,9 @@ public class AlertController {
     }
 
     @GetMapping("/last-ten")
-    public ResponseEntity<List<AlertResponseDTO>> getLast10ByRegion(@RequestParam Integer regionId) {
-        return ResponseEntity.ok(alertService.getLast10AlertsByRegion(regionId));
+    public ResponseEntity<List<AlertLogRecentResponseDTO>> getLast10AlertLogs(
+            @RequestParam(required = false) Integer regionId) {
+        return ResponseEntity.ok(alertService.getLast10AlertLogs(regionId));
     }
 
     @GetMapping("/search")

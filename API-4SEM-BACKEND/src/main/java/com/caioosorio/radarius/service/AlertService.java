@@ -2,6 +2,7 @@ package com.caioosorio.radarius.service;
 
 import com.caioosorio.radarius.dto.alert.AlertRequestDTO;
 import com.caioosorio.radarius.dto.alert.AlertResponseDTO;
+import com.caioosorio.radarius.dto.alertlog.AlertLogRecentResponseDTO;
 import org.springframework.data.domain.Page;
 
 import java.time.LocalDateTime;
@@ -18,7 +19,7 @@ public interface AlertService {
 
     List<AlertResponseDTO> findAll();
 
-    List<AlertResponseDTO> getLast10AlertsByRegion(Integer regionId);
+    List<AlertLogRecentResponseDTO> getLast10AlertLogs(Integer regionId);
 
     Page<AlertResponseDTO> getAlertsWithFilters(
             List<Integer> regionIds,
