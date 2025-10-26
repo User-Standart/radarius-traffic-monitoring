@@ -20,7 +20,7 @@
     <a href="#equipe">Equipe</a>
 </p>
 
-> Status do Projeto: Sprint 2 🟢 <br /><br />
+> Status do Projeto: Adequação da Sprint 3 🟡 <br /><br />
 > Pasta de Documentação: [Link](https://github.com/User-Standart/API-4SEM/tree/main/docs) 📄 <br /><br />
 > Vídeo do Projeto: [A ser feito]() 📽️
 
@@ -156,7 +156,7 @@ Foi desenvolvido um Sistema Inteligente de Monitoramento e Alerta de Tráfego. E
 
 ## 🖥️ Modelagem de Banco de Dados
 
-<img src="./docs/media/modelagem-banco-de-dados.png" />
+<img alt="modelagem-banco" src="./docs/media/modelagem-banco-de-dados.png" />
 
 → [Voltar ao topo](#User-Standart)
 
