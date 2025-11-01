@@ -43,7 +43,7 @@ OBS: Foram necessárias alterações. Os user stories com * (asterisco) foram cr
 | 13 | 🟡 Média * | Como gestor, quero poder visualizar e manipular todos os usuários disponíveis na base | 7 | 3 |
 | 14 | 🟢 Baixa | Como gestor, quero ter logs dos alertas gerados, para registro de auditoria e estudo de histórico do comportamento do trânsito | 6 | 3 |
 
-Stories points removidos por incapacidade de atender no prazo e / ou mudanças no escopo (70 horas)
+User stories removidos por incapacidade de atender no prazo e / ou mudanças no escopo (70 horas)
 
 | Rank | Prioridade | User Story | Estimativa | Sprint |
 |-|-|-|-|-|
