@@ -18,9 +18,7 @@
 
 ## 🏅 Desafio
 
-<div align="center">
-<img height="300" alt="construcao" src="../../../media/em-construcao.jpeg" />
-</div>
+Implementar funcionalidade que aprimorem a experiência do usuário para o controle de informações existentes na base, garantindo maior controle desses dados. Nessa sprint será feita a separação funcionalidades por permissões de usuários, telas de usuários e alertas, e visualização de níveis de indicadores no mapa da tela inicial, garantindo maior confiabilidade e controle nas decisões.
 
 <span id="user-stories">
 
@@ -28,7 +26,7 @@
 
 Capacidade estimada da Equipe na Sprint: 107 Story points (horas)
 
-Meta da Sprint: User Stories de rank 4, rank 6, rank 8, rank 12 e rank 13 (total de 97 Story Points)
+Meta da Sprint: User Stories de rank 4, rank 6, rank 8, rank 12 e rank 13 (total de 91 Story Points)
 
 Previsão da Sprint: User Story de rank 11 (6 Story Points)
 
