@@ -26,20 +26,30 @@
 
 ## 📋 User Stories
 
-Capacidade estimada da Equipe na Sprint: 116 Story points (horas)
+Capacidade estimada da Equipe na Sprint: 107 Story points (horas)
 
-Meta da Sprint: User Stories de rank 4, rank 5, rank 6, rank 8 e rank 11 (total de 76 Story Points)
+Meta da Sprint: User Stories de rank 4, rank 6, rank 8, rank 12 e rank 13 (total de 97 Story Points)
 
-Previsão da Sprint: User Story de rank 12 (42 Story Points)
+Previsão da Sprint: User Story de rank 11 (6 Story Points)
+
+OBS: Foram necessárias alterações. Os endpoints com * (asterisco) foram criados no planejamento da sprint 3, devido à mudanças no escopo (49 horas)
 
 | Rank | Prioridade | User Story | Estimativa | Sprint |
 |-|-|-|-|-|
-| 4 | 🟡 Média | Como gestor, quero que a tela de documentação dos indicadores (rank 3) ofereça a possibilidade de adicionar, editar e deletar os indicadores, para que eu tenha controle sobre o monitoramento do trânsito da cidade | 22 | 3 |
-| 5 | 🟡 Média | Como gestor, quero ter a possibilidade de alterar as definições dos níveis referentes a um indicador sem modificar a quantidade de níveis existentes, para que o disparo de alertas, que dependem desses níveis, ocorram em momentos controlados | 12 | 3 |
+| 4 | 🔴 Alta * | Como cliente, quero que cada permissão de usuário (gestor, agente e público) tenham acessos diferentes à cada funcionalidade | 26 | 3 |
 | 6 | 🟡 Média | Como gestor, quero poder associar um usuário agente a uma zona ou usuário gestor a uma zona, para que recebam informações específicas e centralizadas para atuar | 16 | 3 |
-| 8 | 🟡 Média | Como gestor, quero que as zonas tenham informações das principais vias demarcadas e que apresentem o congestionamento dessa via, para que eu possa atuar de forma mais rápida e precisa em pontos críticos da cidade | 20 | 3 |
-| 11 | 🟢 Baixa | Como gestor, quero ter logs dos alertas gerados, para registro de auditoria e estudo de histórico do comportamento do trânsito | 6 | 3 |
-| 12 | 🟢 Baixa | Como gestor, quero um chat interno no produto para que eu possa consultar informações que estão no banco de forma simplificada | 42 | 3 |
+| 8 | 🟡 Média | Como gestor, quero que as zonas tenham informações das principais vias demarcadas e que apresentem a qualidade dessa via, para que eu possa atuar de forma mais rápida e precisa em pontos críticos da cidade | 26 | 3 |
+| 12 | 🟡 Média * | Como agente e como gestor, quero poder visualizar todos os alertas disponíveis na base | 16 | 3 |
+| 13 | 🟡 Média * | Como gestor, quero poder visualizar e manipular todos os usuários disponíveis na base | 7 | 3 |
+| 14 | 🟢 Baixa | Como gestor, quero ter logs dos alertas gerados, para registro de auditoria e estudo de histórico do comportamento do trânsito | 6 | 3 |
+
+Stories points removidos por incapacidade de atender no prazo e / ou mudanças no escopo (70 horas)
+
+| Rank | Prioridade | User Story | Estimativa | Sprint |
+|-|-|-|-|-|
+| 5 | 🟡 Média | Como gestor, quero que a tela de documentação dos indicadores (rank 3) ofereça a possibilidade de adicionar, editar e deletar os indicadores, para que eu tenha controle sobre o monitoramento do trânsito da cidade | 16 | 3 |
+| 6 | 🟡 Média | Como gestor, quero ter a possibilidade de alterar as definições dos níveis referentes a um indicador sem modificar a quantidade de níveis existentes, para que o disparo de alertas, que dependem desses níveis, ocorram em momentos controlados | 12 | 3 |
+| 15 | 🟢 Baixa | Como gestor, quero um chat interno no produto para que eu possa consultar informações que estão no banco de forma simplificada | 42 | 3 |
 
 <span id="dor">
 
