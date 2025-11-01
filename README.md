@@ -104,8 +104,8 @@ OBS: Foram necessárias alterações. Os user stories com * (asterisco) foram cr
 <span id="dod">
 
 ## 🏆 DoD - Definition of Done
+- Manual de Instalação
 - Manual de Usuário
-- Manual da Aplicação
 - Documentação da API (Application Programming Interface)
 - Código completo
 - Vídeos de cada etapa de entrega
@@ -154,7 +154,8 @@ OBS: Foram necessárias alterações. Os user stories com * (asterisco) foram cr
 
 ## 📖 Manual de instalação
 
-<img height="300" alt="construcao" src="./docs/media/em-construcao.jpeg" />
+Acesso ao manual pelo [Link](https://github.com/User-Standart/API-4SEM/blob/main/docs/install/README.md)
+<br />
 
 → [Voltar ao topo](#User-Standart)
 
