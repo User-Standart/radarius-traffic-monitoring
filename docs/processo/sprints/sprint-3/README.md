@@ -32,7 +32,7 @@ Meta da Sprint: User Stories de rank 4, rank 6, rank 8, rank 12 e rank 13 (total
 
 Previsão da Sprint: User Story de rank 11 (6 Story Points)
 
-OBS: Foram necessárias alterações. Os endpoints com * (asterisco) foram criados no planejamento da sprint 3, devido à mudanças no escopo (49 horas)
+OBS: Foram necessárias alterações. Os user stories com * (asterisco) foram criados no planejamento da sprint 3, devido à mudanças no escopo (49 horas)
 
 | Rank | Prioridade | User Story | Estimativa | Sprint |
 |-|-|-|-|-|
