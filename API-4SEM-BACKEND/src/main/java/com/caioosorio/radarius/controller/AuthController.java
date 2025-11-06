@@ -1,10 +1,11 @@
 package com.caioosorio.radarius.controller;
 
-import com.caioosorio.radarius.dto.error.ErrorResponse;
 import com.caioosorio.radarius.dto.login.LoginRequestDTO;
 import com.caioosorio.radarius.dto.login.LoginResponseDTO;
 import com.caioosorio.radarius.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ProblemDetail;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -26,11 +27,12 @@ public class AuthController {
             LoginResponseDTO response = authService.login(dto.email(), dto.password());
             return ResponseEntity.ok(response);
         } catch (AuthenticationException e) {
-            return ResponseEntity.status(401).body(new ErrorResponse(
-                "Unauthorized",
-                "Usuário inexistente ou senha inválida",
-                401
-            ));
+            ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(
+                HttpStatus.UNAUTHORIZED,
+                "Usuário inexistente ou senha inválida"
+            );
+            problemDetail.setTitle("Unauthorized");
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(problemDetail);
         }
     }
 }
