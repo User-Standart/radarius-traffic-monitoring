@@ -3,6 +3,7 @@ package com.caioosorio.radarius.controller;
 import com.caioosorio.radarius.dto.road.RoadRequestDTO;
 import com.caioosorio.radarius.dto.road.RoadResponseDTO;
 import com.caioosorio.radarius.service.RoadService;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
