@@ -2,6 +2,7 @@ package com.caioosorio.radarius.controller;
 
 import com.caioosorio.radarius.dto.protocol.ProtocolRequestDTO;
 import com.caioosorio.radarius.dto.protocol.ProtocolResponseDTO;
+import com.caioosorio.radarius.security.annotations.RequireGestorRole;
 import com.caioosorio.radarius.service.ProtocolService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -11,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/protocols")
+@RequireGestorRole
 public class ProtocolController {
 
     @Autowired
