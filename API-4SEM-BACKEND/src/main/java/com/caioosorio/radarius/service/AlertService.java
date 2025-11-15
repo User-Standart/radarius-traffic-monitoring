@@ -1,5 +1,6 @@
 package com.caioosorio.radarius.service;
 
+import com.caioosorio.radarius.dto.alert.AlertLevelPerRegionDTO;
 import com.caioosorio.radarius.dto.alert.AlertRequestDTO;
 import com.caioosorio.radarius.dto.alert.AlertResponseDTO;
 import com.caioosorio.radarius.dto.alertlog.AlertLogRecentResponseDTO;
@@ -32,5 +33,7 @@ public interface AlertService {
     List<AlertResponseDTO> getTop5WorstByRegion(Integer regionId);
 
     List<AlertResponseDTO> getTop5WorstByRegionAndCriterion(Integer regionId, Integer criterionId);
+
+    List<AlertLevelPerRegionDTO> getAverageLevelPerRegion();
 
 }
