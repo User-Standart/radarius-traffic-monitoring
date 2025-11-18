@@ -2,6 +2,7 @@ package com.caioosorio.radarius.controller;
 
 import com.caioosorio.radarius.dto.protocol.ProtocolRequestDTO;
 import com.caioosorio.radarius.dto.protocol.ProtocolResponseDTO;
+import com.caioosorio.radarius.security.annotations.RequireAgenteOrGestorRole;
 import com.caioosorio.radarius.security.annotations.RequireGestorRole;
 import com.caioosorio.radarius.service.ProtocolService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,7 @@ public class ProtocolController {
     }
 
     @GetMapping
+    @RequireAgenteOrGestorRole
     public ResponseEntity<List<ProtocolResponseDTO>> search(@RequestParam (required = false) String name) {
         if (name != null && !name.isEmpty())
             return ResponseEntity.ok(protocolService.search(name));
