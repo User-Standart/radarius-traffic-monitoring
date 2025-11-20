@@ -3,8 +3,10 @@ package com.caioosorio.radarius.service.impl;
 import com.caioosorio.radarius.dto.protocol.ProtocolRequestDTO;
 import com.caioosorio.radarius.dto.protocol.ProtocolResponseDTO;
 import com.caioosorio.radarius.entity.Protocol;
+import com.caioosorio.radarius.entity.RootCause;
 import com.caioosorio.radarius.repository.PersonRepository;
 import com.caioosorio.radarius.repository.ProtocolRepository;
+import com.caioosorio.radarius.repository.RootCauseRepository;
 import com.caioosorio.radarius.service.ProtocolService;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,8 @@ public class ProtocolServiceImpl implements ProtocolService {
     private ProtocolRepository protocolRepository;
     @Autowired
     private PersonRepository personRepository;
+    @Autowired
+    private RootCauseRepository rootCauseRepository;
 
     @Override
     public ProtocolResponseDTO create(ProtocolRequestDTO dto) {
@@ -62,10 +66,11 @@ public class ProtocolServiceImpl implements ProtocolService {
     }
 
     @Override
-    public List<ProtocolResponseDTO> findByRootCause(Integer rootCauseId) {
-        return protocolRepository.findByRootCauseId(rootCauseId).stream()
-                .map(this::mapToDTO)
-                .collect(Collectors.toList());
+    public ProtocolResponseDTO findByRootCause(Integer rootCauseId) {
+        RootCause rc = rootCauseRepository.findById(rootCauseId)
+                .orElseThrow(() -> new EntityNotFoundException("Root Cause não encontrado"));
+
+        return mapToDTO(rc.getProtocol());
     }
 
     private Protocol mapToEntity(ProtocolRequestDTO dto) {
