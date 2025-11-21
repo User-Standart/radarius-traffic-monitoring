@@ -4,6 +4,7 @@ import com.caioosorio.radarius.dto.alert.AlertLevelPerRegionDTO;
 import com.caioosorio.radarius.dto.alert.AlertRequestDTO;
 import com.caioosorio.radarius.dto.alert.AlertResponseDTO;
 import com.caioosorio.radarius.dto.alertlog.AlertLogRecentResponseDTO;
+import com.caioosorio.radarius.dto.alertlog.AlertLogResponseDTO;
 import org.springframework.data.domain.Page;
 
 import java.time.LocalDateTime;
@@ -37,5 +38,18 @@ public interface AlertService {
     List<AlertLevelPerRegionDTO> getAverageLevelPerRegion();
 
     List<AlertResponseDTO> getActiveAlertsByRegions(List<Integer> regionIds);
+
+    Page<AlertResponseDTO> getAlertHistory(
+            List<Integer> regionIds,
+            List<Integer> criterionIds,
+            List<Short> levels,
+            Boolean isOpen,
+            LocalDateTime startDate,
+            LocalDateTime endDate,
+            int page,
+            int size
+    );
+
+    List<AlertLogResponseDTO> getAlertLogs(Integer alertId);
 
 }
