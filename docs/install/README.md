@@ -1,4 +1,4 @@
-# Guia de Instalação do Projeto Vue com Spring e Docker
+# Manual de Instalação do Projeto Vue com Spring e Docker
 
 Este documento descreve os passos para configurar e executar uma aplicação composta por um frontend em Vue.js e um backend em Spring, utilizando Docker para gerenciar o banco de dados PostgreSQL.
 

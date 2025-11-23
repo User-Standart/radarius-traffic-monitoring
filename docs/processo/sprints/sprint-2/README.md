@@ -12,7 +12,7 @@
     <a href="#equipe">Equipe</a>
 </p>
 
-> Status da Sprint: Não iniciada
+> Status da Sprint: Concluída ✅
 
 <span id="desafio">
 
@@ -74,9 +74,7 @@ Previsão da Sprint: User Story de rank 10 (33 Story Points)
 
 ## 📉 Burndown
 
-<div align="center">
-<img height="300" alt="construcao" src="../../../media/em-construcao.jpeg" />
-</div>
+<img src="../../../media/burndown-sprint-2.png" />
 
 <span id="equipe">
 

@@ -1,0 +1,50 @@
+services:
+  backend:
+    build:
+      context: ./API-4SEM-BACKEND
+      dockerfile: Dockerfile
+    container_name: radarius-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - TNS_NAME=radarius_high
+      - WALLET_DIR=/app/Wallet_radarius
+      - SPRING_PROFILES_ACTIVE=default
+    volumes:
+      - ./API-4SEM-BACKEND/Wallet_radarius:/app/Wallet_radarius:ro
+    networks:
+      - radarius-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  frontend:
+    build:
+      context: ./API-4SEM-FRONTEND
+      dockerfile: Dockerfile
+    container_name: radarius-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - radarius-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+networks:
+  radarius-network:
+    driver: bridge
+
+volumes:
+  oracle-wallet:
+    external: false
