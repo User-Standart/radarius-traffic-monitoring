@@ -2,11 +2,15 @@ package com.caioosorio.radarius.service.impl;
 
 import com.caioosorio.radarius.dto.region.RegionRequestDTO;
 import com.caioosorio.radarius.dto.region.RegionResponseDTO;
+import com.caioosorio.radarius.entity.Person;
 import com.caioosorio.radarius.entity.Region;
+import com.caioosorio.radarius.repository.PersonRepository;
 import com.caioosorio.radarius.repository.RegionRepository;
 import com.caioosorio.radarius.service.RegionService;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +21,9 @@ public class RegionServiceImpl implements RegionService {
 
     @Autowired
     private RegionRepository regionRepository;
+
+    @Autowired
+    private PersonRepository personRepository;
 
     @Override
     public RegionResponseDTO create(RegionRequestDTO dto) {
@@ -46,9 +53,50 @@ public class RegionServiceImpl implements RegionService {
 
     @Override
     public List<RegionResponseDTO> findAll() {
-        return regionRepository.findAll().stream()
+        List<Integer> userRegionIds = getUserRegionIds();
+        List<Region> regions;
+        if (userRegionIds.isEmpty()) {
+            regions = regionRepository.findAll();
+        } else {
+            regions = regionRepository.findAllById(userRegionIds);
+        }
+
+        return regions.stream()
                 .map(this::mapToDTO)
                 .collect(Collectors.toList());
+    }
+
+    private List<Integer> getUserRegionIds() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        if (authentication == null || authentication.getPrincipal() == null) {
+            return List.of();
+        }
+
+        Object principal = authentication.getPrincipal();
+        Integer userId = null;
+
+        try {
+            com.caioosorio.radarius.security.UserPrincipal up =
+                    (com.caioosorio.radarius.security.UserPrincipal) principal;
+            userId = up.getUserId();
+        } catch (ClassCastException ignored) {
+        }
+
+        Person person = null;
+        if (userId != null) {
+            person = personRepository.findById(userId).orElse(null);
+        } else if (authentication.getName() != null) {
+            person = personRepository.findByEmail(authentication.getName()).orElse(null);
+        }
+
+        if (person != null && person.getRegions() != null && !person.getRegions().isEmpty()) {
+            return person.getRegions().stream()
+                    .map(Region::getId)
+                    .collect(Collectors.toList());
+        }
+
+        return List.of();
     }
 
     private Region mapToEntity(RegionRequestDTO dto) {
