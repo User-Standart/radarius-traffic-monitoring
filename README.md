@@ -176,7 +176,7 @@ Acesso ao manual pelo [Link](https://github.com/User-Standart/API-4SEM/blob/main
 
 ## 📓 Documentação API
 
-<img height="300" alt="construcao" src="./docs/media/em-construcao.jpeg" />
+[Acessar Documentação Swagger](https://drive.google.com/drive/folders/1cTevsjRi3AkroBniEprjlUZcLx0zNM3g?usp=sharing)
 
 → [Voltar ao topo](#User-Standart)
 
