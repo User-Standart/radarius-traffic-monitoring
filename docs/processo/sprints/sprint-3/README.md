@@ -12,7 +12,7 @@
     <a href="#equipe">Equipe</a>
 </p>
 
-> Status da Sprint: Não iniciada
+> Status da Sprint: Concluída ✅
 
 <span id="desafio">
 
@@ -88,7 +88,7 @@ User stories removidos por incapacidade de atender no prazo e / ou mudanças no 
 ## 📉 Burndown
 
 <div align="center">
-<img height="300" alt="construcao" src="../../../media/em-construcao.jpeg" />
+<img src="../../../media/burndown-sprint-3.png" />
 </div>
 
 <span id="equipe">
