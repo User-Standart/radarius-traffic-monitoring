@@ -1,7 +1,9 @@
 package com.caioosorio.radarius.dto.person;
 
+import com.caioosorio.radarius.dto.region.RegionResponseDTO;
 import com.caioosorio.radarius.enums.RoleEnum;
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class PersonResponseDTO {
     private Integer id;
@@ -10,6 +12,7 @@ public class PersonResponseDTO {
     private String email;
     private RoleEnum role;
     private LocalDateTime createdAt;
+    private List<RegionResponseDTO> regions;
 
     // Getters e Setters
     public Integer getId() { return id; }
@@ -29,4 +32,7 @@ public class PersonResponseDTO {
 
     public LocalDateTime getCreatedAt() { return createdAt; }
     public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
+
+    public List<RegionResponseDTO> getRegions() { return regions; }
+    public void setRegions(List<RegionResponseDTO> regions) { this.regions = regions; }
 }

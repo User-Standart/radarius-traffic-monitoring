@@ -2,15 +2,17 @@ package com.caioosorio.radarius.controller;
 
 import com.caioosorio.radarius.dto.person.PersonRequestDTO;
 import com.caioosorio.radarius.dto.person.PersonResponseDTO;
+import com.caioosorio.radarius.security.annotations.RequireAdminRole;
 import com.caioosorio.radarius.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/persons")
+@RequireAdminRole
 public class PersonController {
 
     @Autowired
@@ -32,8 +34,8 @@ public class PersonController {
     }
 
     @GetMapping
-    public ResponseEntity<List<PersonResponseDTO>> findAll() {
-        return ResponseEntity.ok(personService.findAll());
+    public ResponseEntity<Page<PersonResponseDTO>> findAll(Pageable pageable) {
+        return ResponseEntity.ok(personService.findAll(pageable));
     }
 
     @DeleteMapping("/{id}")
