@@ -22,7 +22,7 @@
 
 > Status do Projeto: Finalizado ✅ <br /><br />
 > Pasta de Documentação: [Link](https://github.com/User-Standart/API-4SEM/tree/main/docs) 📄 <br /><br />
-> Vídeo do Projeto: [A ser feito]() 📽️
+> Vídeos do Projeto: [Fluxo usuário público](https://drive.google.com/file/d/1G6b-caz4GOOALUhfYMFFiktgj53RN-BM/view?usp=sharing) / [Fluxo usuário agente](https://drive.google.com/file/d/12RU3fXxbnhlbY8p932MR_5re0Mrc_VQK/view?usp=sharing) / [Fluxo usuário gestor](https://drive.google.com/file/d/1vHfJ08QC7UmmriwL5C7PuEZcnNhNgzLA/view?usp=sharing) / [Fluxo usuário admin](https://drive.google.com/file/d/1J-53EJ_zDeAMko_-KFkLkkIGlr-jld9O/view?usp=sharing) 📽️
 
 <span id="desafio">
 
