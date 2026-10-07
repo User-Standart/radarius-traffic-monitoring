@@ -1,88 +1,90 @@
-# Documentação - Sprint 2
+# Documentation - Sprint 2
 
 <img width="1300" height="240" alt="image" src="https://github.com/user-attachments/assets/7be1261c-228e-4f50-9257-df0f0a3239ea" />
 
-## <p align="center">User-Standart</p>
+## <p align="center">Radarius</p>
 <p align="center">
-    <a href="#desafio">Desafio</a>  |  
-    <a href="#user-stories">User Stories</a>  |   
-    <a href="#dor">DoR</a>  |  
-    <a href="#dor">DoD</a>  |  
-    <a href="#burndown">Burndown</a>  |  
-    <a href="#equipe">Equipe</a>
+    <a href="#challenge">Challenge</a>  |
+    <a href="#user-stories">User Stories</a>  |
+    <a href="#dor">DoR</a>  |
+    <a href="#dod">DoD</a>  |
+    <a href="#burndown">Burndown</a>  |
+    <a href="#team">Team</a>
 </p>
 
-> Status da Sprint: Concluída ✅
+> Sprint Status: Done ✅
 
-<span id="desafio">
+<span id="challenge">
 
-## 🏅 Desafio
+## 🏅 Challenge
 
-Implementar funcionalidades que aprimorem a experiência do usuário durante o recebimento de informações do trânsito, garantindo maior confiabilidade e controle nas decisões. Nesta sprint será feita o gerenciamento de alertas automáticos, permitindo que o sistema faça os disparos para os usuários corretos e que estes usuários recebam e possam interagir com os alertas, podendo realizar ações de definição de "causa raíz" e acesso ao protocolo correspondente.
+Implement features that improve the user experience when receiving traffic information, ensuring more reliability and control in decision-making. This sprint covers automatic alert management, allowing the system to send alerts to the right users and letting those users receive and interact with the alerts, defining a "root cause" and accessing the corresponding protocol.
 
 <span id="user-stories">
 
 ## 📋 User Stories
 
-Capacidade estimada da Equipe na Sprint: 116 Story points (horas)
+Estimated team capacity for the Sprint: 116 Story Points (hours)
 
-Meta da Sprint: User Stories de rank 7 e rank 9 (total de 57 Story Points)
+Sprint Goal: User Stories ranked 7 and 9 (57 Story Points in total)
 
-Previsão da Sprint: User Story de rank 10 (33 Story Points)
+Sprint Forecast: User Story ranked 10 (33 Story Points)
 
-| Rank | Prioridade | User Story | Story Points | Sprint |
+| Rank | Priority | User Story | Story Points | Sprint |
 |-|-|-|-|-|
-| 7 | 🟡 Média | Como agente e como gestor, quero receber alertas quando houver mudança nos níveis de qualquer indicador, para que eu tenha noção de quando o trânsito piorar e possa tomar medidas para solucionar o problema | 39 | 2 |
-| 9 | 🟡 Média | Como gestor, quero poder criar “causas raíz” para alertas disparados e poder criar protocolos para essas “causas raíz”, para que o agente tenha uma orientação de como resolver os alertas que surgirem | 18 | 2 |
-| 10 | 🟡 Média | Como agente, quero poder visualizar um alerta específico, para que possa documentar informações sobre este alerta, obter informações sobre como resolver o problema que gerou o alerta e finalizá-lo | 33 | 3 |
+| 7 | 🟡 Medium | As an agent and as a manager, I want to receive alerts when the level of any indicator changes, so I know when traffic gets worse and can take action to solve the problem | 39 | 2 |
+| 9 | 🟡 Medium | As a manager, I want to be able to create "root causes" for triggered alerts and create protocols for these "root causes", so the agent has guidance on how to resolve the alerts that come up | 18 | 2 |
+| 10 | 🟡 Medium | As an agent, I want to be able to view a specific alert, so I can document information about it, get information on how to solve the problem that generated it, and close it | 33 | 3 |
 
 <span id="dor">
 
 ## 🏃‍ DoR
 
-|             Critério              | Descrição                                                                                         |
+|             Criterion             | Description                                                                                       |
 | :-------------------------------: | ------------------------------------------------------------------------------------------------- |
-|       Clareza na Descrição        | A User Story está escrita no formato “Como [persona], quero [ação] para que [objetivo]”           |
-| Critérios de Aceitação Definidos  | A história possui critérios objetivos que indicam o que é necessário para considerá-la concluída. |
-|   Referência Visual no Figma      | O protótipo correspondente está disponível e vinculado (quando aplicável ao front-end).           |
-|     Escopo Técnico Validado       | Está claro se a história envolve frontend, backend ou ambos.                                      |
-|    Perfil de Acesso Definido      | O tipo de usuário (comum ou administrador) está claramente definido para cada história.           |
-|    Compreensão Compartilhada      | Toda a equipe (incluindo PO e devs) compreende o propósito da história.                           |
-|            Estímável              | A história foi pontuada no Planning Poker ou tem uma estimativa clara.                            |
-|       Documentos de Apoio         | Se necessário, mockups, fluxos ou modelos de dados estão anexados ou referenciados.               |
-|    Validação com PO e equipe      | A história foi discutida em refinamento ou planning e validada com o time técnico.                |
-|   Critérios Técnicos Acordados    | As necessidades de Frontend e Backend foram claramente separadas (quando aplicável).              |
-| Alinhamento com arquitetura atual | A funcionalidade proposta está coerente com o funcionamento já entregue na Sprint 1.              |
+|       Clear Description           | The User Story is written in the format "As a [persona], I want [action] so that [goal]"          |
+| Defined Acceptance Criteria       | The story has objective criteria that indicate what is needed to consider it done.                |
+|   Visual Reference in Figma       | The corresponding prototype is available and linked (when applicable to the frontend).            |
+|     Validated Technical Scope     | It is clear whether the story involves frontend, backend or both.                                 |
+|    Defined Access Profile         | The user type (regular or administrator) is clearly defined for each story.                       |
+|      Shared Understanding         | The whole team (including PO and devs) understands the purpose of the story.                      |
+|            Estimable              | The story was scored in Planning Poker or has a clear estimate.                                   |
+|       Supporting Documents        | When needed, mockups, flows or data models are attached or referenced.                            |
+|  Validated with PO and team       | The story was discussed in refinement or planning and validated with the technical team.          |
+|   Agreed Technical Criteria       | Frontend and Backend needs were clearly separated (when applicable).                              |
+| Alignment with current architecture | The proposed feature is consistent with what was already delivered in Sprint 1.             |
 
 <span id="dod">
 
 ## 🏆 DoD
 
-|                 Critério                 | Descrição                                                                                                        |
+|                 Criterion                | Description                                                                                                      |
 | :--------------------------------------: | ---------------------------------------------------------------------------------------------------------------- |
-|     Critérios de Aceitação atendidos     | Todos os cenários definidos na US foram implementados e validados com sucesso.                                   |
-| Cenários de Teste executados e aprovados | Todos os cenários descritos foram validados manualmente.                                                         |
-|      Feedback Visual Implementado        | Funcionalidades como pop-ups, mensagens de erro ou barras de progresso estão claras e acessíveis ao usuário.     |
-|        Fluxo Seguro e Controlado         | Não há caminhos quebrados nem submissões incoerentes no fluxo de avaliação ou navegação.                         |
-|      Código Revisado (Code Review)       | O código foi revisado por pelo menos um colega de equipe.                                                        |
-|     Documentação Interna Atualizada      | Foi atualizado o que for necessário: API, estrutura de dados, endpoints, etc.                                    |
-|  Integração Com o Restante da Aplicação  | A funcionalidade foi testada junto com o fluxo completo do sistema (Ex: Envio → Resposta → Avaliação → Escolha). |
-|             Validação do PO              | O PO testou e confirmou que a funcionalidade atende ao esperado.                                                 |
-|            Pronto para deploy            | A funcionalidade pode ser entregue ao ambiente de produção/testes finais sem pendências.                         |
+|        Acceptance Criteria met           | All scenarios defined in the US were implemented and successfully validated.                                     |
+|    Test Scenarios run and approved       | All described scenarios were manually validated.                                                                 |
+|      Visual Feedback Implemented         | Features such as pop-ups, error messages or progress bars are clear and accessible to the user.                  |
+|        Safe and Controlled Flow          | There are no broken paths or inconsistent submissions in the evaluation or navigation flow.                      |
+|        Code Reviewed (Code Review)       | The code was reviewed by at least one teammate.                                                                  |
+|     Internal Documentation Updated       | Whatever was needed was updated: API, data structures, endpoints, etc.                                           |
+|  Integration With the Rest of the App    | The feature was tested together with the full system flow (e.g. Submit → Response → Evaluation → Choice).        |
+|             PO Validation                | The PO tested and confirmed that the feature works as expected.                                                  |
+|            Ready for deploy              | The feature can be delivered to production/final testing with nothing pending.                                   |
 
 <span id="burndown">
 
 ## 📉 Burndown
 
+<div align="center">
 <img src="../../../media/burndown-sprint-2.png" />
+</div>
 
-<span id="equipe">
+<span id="team">
 
-## 👥 Equipe
+## 👥 Team
 
 <div align="center">
 
-|    Função     | Nome                  | LinkedIn & GitHub |
+|    Role       | Name                  | LinkedIn & GitHub |
 |---------------|-----------------------|-------------------|
 | Product Owner | Augusto Piatto        | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/augusto-piatto/) [![GitHub](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/augustopiatto) |
 | Scrum Master  | Beatriz Sthefanny     | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/beatriz-santos-0b6773220/) [![GitHub](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/BeatrizSantos00) |

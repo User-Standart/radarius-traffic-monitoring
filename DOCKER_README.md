@@ -1,219 +1,218 @@
-## Configuração Docker para Aplicação Fullstack Radarius
+## Docker Setup for the Radarius Fullstack Application
 
-Este repositório contém a **configuração do Docker** para executar a aplicação com uma API em **Spring Boot** e frontend em **Vue.js**.
+This repository contains the **Docker setup** to run the application with a **Spring Boot** API and a **Vue.js** frontend.
 
 -----
 
-## Pré-requisitos
+## Prerequisites
 
-  - Docker Desktop (Windows) ou Docker Engine (Linux)
+  - Docker Desktop (Windows) or Docker Engine (Linux)
   - Docker Compose
-  - Conexão com a internet para o Oracle Database
+  - Internet connection for the Oracle Database
 
 -----
 
-## Estrutura do Projeto
+## Project Structure
 
 ```
 API-4SEM/
-├── API-4SEM-BACKEND/          # Backend Spring Boot
+├── API-4SEM-BACKEND/          # Spring Boot backend
 │   ├── Dockerfile
 │   ├── .dockerignore
-│   └── Wallet_radarius/       # Arquivo do Oracle Wallet
-├── API-4SEM-FRONTEND/         # Frontend em Vue.js
+│   └── Wallet_radarius/       # Oracle Wallet files
+├── API-4SEM-FRONTEND/         # Vue.js frontend
 │   ├── Dockerfile
 │   ├── .dockerignore
 │   └── nginx.conf
-└── docker-compose.yml         # Arquivo principal do Docker Compose
+└── docker-compose.yml         # Main Docker Compose file
 ```
 
 -----
 
-## Início Rápido
+## Quick Start
 
-1.  **Clone o repositório e baixe o conteúdo dos submódulos** (se ainda não o fez):
+1.  **Clone the repository** (if you haven't yet):
 
     ```bash
     git clone <repository-url>
     cd API-4SEM
-    git submodule update --init --recursive
     ```
 
-2.  **Crie e inicie a aplicação**:
+2.  **Build and start the application**:
 
     ```bash
     docker-compose up --build
     ```
 
-3.  **Acesse a aplicação**:
+3.  **Access the application**:
 
       - Frontend: http://localhost
-      - API Backend: http://localhost:8080
-      - Verificação de Saúde do Backend (Health Check): http://localhost:8080/actuator/health
+      - Backend API: http://localhost:8080
+      - Backend Health Check: http://localhost:8080/actuator/health
 
 -----
 
-## Comandos Disponíveis
+## Available Commands
 
-### Criar e Iniciar (Build and Start)
+### Build and Start
 
 ```bash
-# Crie e inicie todos os serviços
+# Build and start all services
 docker-compose up --build
 
-# Inicie em modo desconectado (detached mode)
+# Start in detached mode
 docker-compose up -d --build
 
-# Inicie um serviço específico
+# Start a specific service
 docker-compose up backend
 docker-compose up frontend
 ```
 
-### Parar e Limpar (Stop and Cleanup)
+### Stop and Cleanup
 
 ```bash
-# Pare todos os serviços
+# Stop all services
 docker-compose down
 
-# Pare e remova os volumes
+# Stop and remove volumes
 docker-compose down -v
 
-# Pare e remova as imagens
+# Stop and remove images
 docker-compose down --rmi all
 ```
 
-### Comandos de Desenvolvimento (Development Commands)
+### Development Commands
 
 ```bash
-# Visualize os logs
+# View logs
 docker-compose logs -f
 
-# Visualize os logs de um serviço específico
+# View logs for a specific service
 docker-compose logs -f backend
 docker-compose logs -f frontend
 
-# Execute comandos em um contêiner em execução
+# Run commands in a running container
 docker-compose exec backend bash
 docker-compose exec frontend sh
 
-# Recrie (rebuild) um serviço específico
+# Rebuild a specific service
 docker-compose build backend
 docker-compose build frontend
 ```
 
 -----
 
-## Serviços
+## Services
 
 ### Backend (Spring Boot)
 
-  - **Porta**: 8080
-  - **Versão Java**: 21
+  - **Port**: 8080
+  - **Java Version**: 21
   - **Framework**: Spring Boot 3.5.5
-  - **Banco de Dados**: Oracle (usando autenticação via *wallet*)
-  - **Verificação de Saúde (Health Check)**: `/actuator/health`
+  - **Database**: Oracle (using wallet authentication)
+  - **Health Check**: `/actuator/health`
 
 ### Frontend (Vue.js)
 
-  - **Porta**: 80
-  - **Versão Node**: 20
-  - **Framework**: Vue.js 3 com Vite
-  - **Servidor Web**: Nginx
-  - **Proxy de API**: Redireciona as rotas `/api/*` para o backend
+  - **Port**: 80
+  - **Node Version**: 20
+  - **Framework**: Vue.js 3 with Vite
+  - **Web Server**: Nginx
+  - **API Proxy**: Forwards `/api/*` routes to the backend
 
 -----
 
-## Variáveis de Ambiente
+## Environment Variables
 
-A aplicação usa as seguintes **variáveis de ambiente**:
+The application uses the following **environment variables**:
 
-  - `TNS_NAME`: Nome TNS do Oracle (padrão: radarius\_high)
-  - `WALLET_DIR`: Caminho para o diretório do *wallet* Oracle
-  - `SPRING_PROFILES_ACTIVE`: Perfil Spring (padrão: default)
-
------
-
-## Conexão com o Banco de Dados
-
-A aplicação está configurada para conectar-se a um banco de dados Oracle usando:
-
-  - Autenticação baseada em *Wallet*
-  - *Connection pooling* com Oracle UCP
-  - Configuração TNS
-
-Certifique-se de que seu banco de dados Oracle esteja acessível e os arquivos do *wallet* estejam configurados corretamente.
+  - `TNS_NAME`: Oracle TNS name (default: radarius\_high)
+  - `WALLET_DIR`: Path to the Oracle wallet directory
+  - `SPRING_PROFILES_ACTIVE`: Spring profile (default: default)
 
 -----
 
-## Solução de Problemas (Troubleshooting)
+## Database Connection
 
-### Problemas Comuns (Common Issues)
+The application is configured to connect to an Oracle database using:
 
-1.  **Conflitos de portas**: Se as portas 80 ou 8080 já estiverem em uso, modifique as portas no `docker-compose.yml`
+  - Wallet-based authentication
+  - Connection pooling with Oracle UCP
+  - TNS configuration
 
-2.  **Problemas de conexão com o Banco de Dados**:
+Make sure your Oracle database is reachable and the wallet files are configured correctly.
 
-      - Verifique se o banco de dados Oracle está em execução
-      - Verifique se os arquivos do *wallet* estão montados corretamente
-      - Verifique a configuração TNS
+-----
 
-3.  **Falhas na Criação (*Build failures*)**:
+## Troubleshooting
 
-      - Verifique se o *daemon* do Docker está em execução
-      - Verifique se todos os arquivos necessários estão presentes
-      - Verifique os logs do Docker: `docker-compose logs`
+### Common Issues
 
-### Verificações de Saúde (Health Checks)
+1.  **Port conflicts**: If ports 80 or 8080 are already in use, change the ports in `docker-compose.yml`
 
-Ambos os serviços incluem verificações de saúde:
+2.  **Database connection issues**:
 
-  - Backend: Verifica o *endpoint* `/actuator/health`
-  - Frontend: Verifica se o *nginx* está servindo o conteúdo
+      - Check that the Oracle database is running
+      - Check that the wallet files are mounted correctly
+      - Check the TNS configuration
+
+3.  **Build failures**:
+
+      - Check that the Docker daemon is running
+      - Check that all required files are present
+      - Check the Docker logs: `docker-compose logs`
+
+### Health Checks
+
+Both services include health checks:
+
+  - Backend: Checks the `/actuator/health` endpoint
+  - Frontend: Checks that nginx is serving content
 
 ### Logs
 
-Visualize os logs para depuração (*debugging*):
+View logs for debugging:
 
 ```bash
-# Todos os serviços
+# All services
 docker-compose logs -f
 
-# Serviço específico
+# Specific service
 docker-compose logs -f backend
 docker-compose logs -f frontend
 ```
 
 -----
 
-## Desenvolvimento (Development)
+## Development
 
-Para desenvolvimento, você pode executar serviços individuais ou modificar o arquivo `docker-compose.yml` para atender às suas necessidades.
+For development, you can run individual services or change the `docker-compose.yml` file to suit your needs.
 
-### Modificando a Configuração
+### Changing the Configuration
 
-  - **Backend**: Modifique `API-4SEM-BACKEND/src/main/resources/application.yaml`
-  - **Frontend**: Modifique `API-4SEM-FRONTEND/vite.config.ts` ou `nginx.conf`
-  - **Docker**: Modifique `docker-compose.yml` para configuração de serviço
-
------
-
-## Considerações sobre Produção (Production Considerations)
-
-Para implantação em produção:
-
-1.  Use arquivos de configuração específicos para o ambiente
-2.  Configure o gerenciamento adequado de segredos (*secrets management*)
-3.  Configure certificados SSL/TLS
-4.  Configure monitoramento e registro (*logging*)
-5.  Use configurações de banco de dados de nível de produção
-6.  Considere usar Docker Swarm ou Kubernetes para orquestração
+  - **Backend**: Edit `API-4SEM-BACKEND/src/main/resources/application.yaml`
+  - **Frontend**: Edit `API-4SEM-FRONTEND/vite.config.ts` or `nginx.conf`
+  - **Docker**: Edit `docker-compose.yml` for service configuration
 
 -----
 
-## Suporte
+## Production Considerations
 
-Para problemas relacionados a:
+For production deployment:
 
-  - Configuração Docker: Verifique este README e os logs do Docker
-  - Funcionalidade da aplicação: Verifique a documentação principal do projeto
-  - Conectividade do Banco de Dados: Verifique o banco de dados Oracle e a configuração do *wallet*
+1.  Use environment-specific configuration files
+2.  Set up proper secrets management
+3.  Configure SSL/TLS certificates
+4.  Set up monitoring and logging
+5.  Use production-grade database settings
+6.  Consider Docker Swarm or Kubernetes for orchestration
+
+-----
+
+## Support
+
+For issues related to:
+
+  - Docker setup: Check this README and the Docker logs
+  - Application features: Check the main project documentation
+  - Database connectivity: Check the Oracle database and wallet configuration

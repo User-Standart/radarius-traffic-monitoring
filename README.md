@@ -2,135 +2,135 @@
 
 <br />
 
-<span id="User-Standart">
+<span id="radarius">
 
-# <p align="center">User-Standart</p>
+# <p align="center">Radarius</p>
 <p align="center">
-    <a href="#desafio">Desafio</a>  |  
-    <a href="#solucao">Solução</a>  |   
-    <a href="#backlog-do-produto">Backlog do Produto</a>  |  
-    <a href="#dor">DoR</a>  |  
-    <a href="#dor">DoD</a>  |  
-    <a href="#cronograma-de-sprints">Cronograma de Sprints</a>  |  
-    <a href="#tecnologias">Tecnologias</a> | 
-    <a href="#manual-de-instalacao">Manual de Instalação</a> | 
-    <a href="#manual-do-usuario">Manual do Usuário</a> | 
-    <a href="#documentacao-api">Documentação API</a> | 
-    <a href="#modelagem-de-banco-de-dados">Modelagem de Banco de Dados</a> | 
-    <a href="#equipe">Equipe</a>
+    <a href="#challenge">Challenge</a>  |
+    <a href="#solution">Solution</a>  |
+    <a href="#product-backlog">Product Backlog</a>  |
+    <a href="#dor">DoR</a>  |
+    <a href="#dod">DoD</a>  |
+    <a href="#sprint-schedule">Sprint Schedule</a>  |
+    <a href="#technologies">Technologies</a> |
+    <a href="#installation-manual">Installation Manual</a> |
+    <a href="#user-manual">User Manual</a> |
+    <a href="#api-documentation">API Documentation</a> |
+    <a href="#database-modeling">Database Modeling</a> |
+    <a href="#team">Team</a>
 </p>
 
-> Status do Projeto: Finalizado ✅ <br /><br />
-> Pasta de Documentação: [Link](https://github.com/User-Standart/API-4SEM/tree/main/docs) 📄 <br /><br />
-> Vídeos do Projeto: [Fluxo usuário público](https://drive.google.com/file/d/1G6b-caz4GOOALUhfYMFFiktgj53RN-BM/view?usp=sharing) / [Fluxo usuário agente](https://drive.google.com/file/d/12RU3fXxbnhlbY8p932MR_5re0Mrc_VQK/view?usp=sharing) / [Fluxo usuário gestor](https://drive.google.com/file/d/1vHfJ08QC7UmmriwL5C7PuEZcnNhNgzLA/view?usp=sharing) / [Fluxo usuário admin](https://drive.google.com/file/d/1J-53EJ_zDeAMko_-KFkLkkIGlr-jld9O/view?usp=sharing) 📽️
+> Project Status: Finished ✅ <br /><br />
+> Documentation folder: [Link](docs) 📄 <br /><br />
+> Project videos: [Public user flow](https://drive.google.com/file/d/1G6b-caz4GOOALUhfYMFFiktgj53RN-BM/view?usp=sharing) / [Agent user flow](https://drive.google.com/file/d/12RU3fXxbnhlbY8p932MR_5re0Mrc_VQK/view?usp=sharing) / [Manager user flow](https://drive.google.com/file/d/1vHfJ08QC7UmmriwL5C7PuEZcnNhNgzLA/view?usp=sharing) / [Admin user flow](https://drive.google.com/file/d/1J-53EJ_zDeAMko_-KFkLkkIGlr-jld9O/view?usp=sharing) 📽️
 
-<span id="desafio">
+<span id="challenge">
 
-## 🏅 Desafio
+## 🏅 Challenge
 
-Diante da necessidade de aprimorar a gestão do tráfego urbano em São José dos Campos, o desafio consiste em implementar uma solução proativa de monitoramento e resposta a incidentes. A cidade carece de um sistema integrado que permita a tranformação de dados dos radares em insights acionáveis, a definição de indicadores específicos para disparo de alertas e a eficiente alocação de agentes de mobilidade para as áreas e situações mais críticas, otimizando assim os recursos e melhorando a fluidez do trânsito.
+Given the need to improve urban traffic management in São José dos Campos, the challenge is to implement a proactive solution for monitoring and responding to incidents. The city lacks an integrated system that turns radar data into actionable insights, defines specific indicators to trigger alerts and efficiently allocates mobility agents to the most critical areas and situations, optimizing resources and improving traffic flow.
 
-<span id="solucao">
+<span id="solution">
 
-## 🏅 Solução
+## 🏅 Solution
 
-Foi desenvolvido um Sistema Inteligente de Monitoramento e Alerta de Tráfego. Esta solução centraliza o controle do trânsito por meio dos radares, permitindo o cadastro de indicadores e níveis de severidade personalizados. Com base nesses parâmetros, o sistema emite alertas automáticos, possibilita a seleção de subzonas estratégicas e facilita a designação inteligente de agentes de mobilidade para cada área. A solução é complementada por um dashboard interativo, que oferece uma visão consolidada e em tempo real de todos os indicadores de desempenho, padrões de tráfego e métricas dos agentes. Através deste painel, os gestores podem tomar decisões ágeis e embasadas em dados, elevando a eficiência operacional e a qualidade do gerenciamento do trânsito na cidade.
+We developed an Intelligent Traffic Monitoring and Alert System. This solution centralizes traffic control through the radars, allowing the registration of custom indicators and severity levels. Based on these parameters, the system issues automatic alerts, enables the selection of strategic subzones and makes it easy to assign mobility agents to each area. The solution is complemented by an interactive dashboard that offers a consolidated, real-time view of all performance indicators, traffic patterns and agent metrics. Through this dashboard, managers can make fast, data-driven decisions, raising operational efficiency and the quality of traffic management in the city.
 
-→ [Voltar ao topo](#User-Standart)
+→ [Back to top](#radarius)
 
 ---
 
-<span id="backlog-do-produto">
+<span id="product-backlog">
 
-## 📋 Backlog do Produto
+## 📋 Product Backlog
 
-OBS: Foram necessárias alterações. Os user stories com * (asterisco) foram criados no planejamento da sprint 3, devido à mudanças no escopo (49 horas) e user stories com ~ (til) foram removidos por incapacidade de atender no prazo e / ou mudanças no escopo (70 horas)
+NOTE: Changes were necessary. User stories marked with * (asterisk) were created during Sprint 3 planning due to scope changes (49 hours), and user stories marked with ~ (tilde) were removed because they could not be delivered on time and/or due to scope changes (70 hours).
 
-| Rank | Prioridade | User Story | Story Points | Sprint |
+| Rank | Priority | User Story | Story Points | Sprint |
 |-|-|-|-|-|
-| 1 | 🔴 Alta | Como gestor, quero informações sobre o trânsito em forma de dashboards, gráficos e tabelas para auxiliar minha tomada de decisão na diminuição de trânsito | 48 | 1 |
-| 2 | 🔴 Alta | Como usuário da plataforma, quero um mapa na tela inicial, que tenha as divisões das zonas da cidade de São José dos Campos, para que eu possa ter uma visão detalhada dos locais que o sistema possui informação | 30 | 1 |
-| 3 | 🔴 Alta | Como usuário publico ou como agente, quero uma tela com a documentação dos indicadores para saber o que está sendo avaliado na exibição do mapa da cidade | 42 | 1 |
-| 4 | 🔴 Alta * | Como cliente, quero que cada permissão de usuário (gestor, agente e público) tenham acessos diferentes à cada funcionalidade | 26 | 3 |
-| 5 | 🟡 Média ~ | Como gestor, quero que a tela de documentação dos indicadores (rank 3) ofereça a possibilidade de adicionar, editar e deletar os indicadores, para que eu tenha controle sobre o monitoramento do trânsito da cidade | 22 | 1 |
-| 6 | 🟡 Média ~ | Como gestor, quero ter a possibilidade de alterar as definições dos níveis referentes a um indicador sem modificar a quantidade de níveis existentes, para que o disparo de alertas, que dependem desses níveis, ocorram em momentos controlados | 12 | 2 |
-| 7 | 🟡 Média | Como gestor, quero poder associar um usuário agente a uma zona ou usuário gestor a uma zona, para que recebam informações específicas e centralizadas para atuar | 16 | 2 |
-| 8 | 🟡 Média | Como agente e como gestor, quero receber alertas quando houver mudança nos níveis de qualquer indicador, para que eu tenha noção de quando o trânsito piorar e possa tomar medidas para solucionar o problema | 39 | 2 |
-| 9 | 🟡 Média | Como gestor, quero que as zonas tenham informações das principais vias demarcadas e que apresentem o congestionamento dessa via, para que eu possa atuar de forma mais rápida e precisa em pontos críticos da cidade | 20 | 2 |
-| 10 | 🟡 Média | Como gestor, quero poder criar “causas raíz” para alertas disparados e poder criar protocolos para essas “causas raíz”, para que o agente tenha uma orientação de como resolver os alertas que surgirem | 18 | 2 |
-| 11 | 🟡 Média | Como agente, quero poder visualizar um alerta específico, para que possa documentar informações sobre este alerta, obter informações sobre como resolver o problema que gerou o alerta e finalizá-lo | 33 | 3 |
-| 12 | 🟡 Média * | Como agente e como gestor, quero poder visualizar todos os alertas disponíveis na base | 16 | 3 |
-| 13 | 🟡 Média * | Como gestor, quero poder visualizar e manipular todos os usuários disponíveis na base | 7 | 3 |
-| 14 | 🟢 Baixa | Como gestor, quero ter logs dos alertas gerados, para registro de auditoria e estudo de histórico do comportamento do trânsito | 6 | 3 |
-| 15 | 🟢 Baixa ~ | Como gestor, quero um chat interno no produto para que eu possa consultar informações que estão no banco de forma simplificada | 42 | 3 |
+| 1 | 🔴 High | As a manager, I want traffic information in the form of dashboards, charts and tables to support my decisions on reducing traffic | 48 | 1 |
+| 2 | 🔴 High | As a platform user, I want a map on the home screen showing the zone divisions of São José dos Campos, so I can have a detailed view of the places the system has information about | 30 | 1 |
+| 3 | 🔴 High | As a public user or agent, I want a screen with the indicators' documentation so I know what is being evaluated on the city map | 42 | 1 |
+| 4 | 🔴 High * | As a client, I want each user role (manager, agent and public) to have different access to each feature | 26 | 3 |
+| 5 | 🟡 Medium ~ | As a manager, I want the indicators documentation screen (rank 3) to allow adding, editing and deleting indicators, so I have control over the city's traffic monitoring | 22 | 1 |
+| 6 | 🟡 Medium ~ | As a manager, I want to be able to change the level definitions of an indicator without changing the number of existing levels, so that alerts, which depend on these levels, are triggered at controlled moments | 12 | 2 |
+| 7 | 🟡 Medium | As a manager, I want to be able to assign an agent user or a manager user to a zone, so they receive specific, centralized information to act on | 16 | 2 |
+| 8 | 🟡 Medium | As an agent and as a manager, I want to receive alerts when the level of any indicator changes, so I know when traffic gets worse and can take action to solve the problem | 39 | 2 |
+| 9 | 🟡 Medium | As a manager, I want zones to include information about the main roads and show congestion on them, so I can act faster and more precisely at critical points in the city | 20 | 2 |
+| 10 | 🟡 Medium | As a manager, I want to be able to create "root causes" for triggered alerts and create protocols for these "root causes", so the agent has guidance on how to resolve the alerts that come up | 18 | 2 |
+| 11 | 🟡 Medium | As an agent, I want to be able to view a specific alert, so I can document information about it, get information on how to solve the problem that generated it, and close it | 33 | 3 |
+| 12 | 🟡 Medium * | As an agent and as a manager, I want to be able to view all alerts in the database | 16 | 3 |
+| 13 | 🟡 Medium * | As a manager, I want to be able to view and manage all users in the database | 7 | 3 |
+| 14 | 🟢 Low | As a manager, I want logs of the generated alerts, for audit records and to study the history of traffic behavior | 6 | 3 |
+| 15 | 🟢 Low ~ | As a manager, I want an internal chat in the product so I can query information in the database in a simplified way | 42 | 3 |
 
 <br />
 
 <details>
-    <summary>User Stories originais</summary>
+    <summary>Original User Stories</summary>
     <br />
-    
-| Rank | Prioridade | User Story | Story Points | Sprint |
+
+| Rank | Priority | User Story | Story Points | Sprint |
 |-|-|-|-|-|
-| 1 | 🔴 Alta | Como gestor, quero informações sobre o trânsito em forma de dashboards, gráficos e tabelas para auxiliar minha tomada de decisão na diminuição de trânsito | 48 | 1 |
-| 2 | 🔴 Alta | Como usuário da plataforma, quero um mapa na tela inicial, que tenha as divisões das zonas da cidade de São José dos Campos, para que eu possa ter uma visão detalhada dos locais que o sistema possui informação | 30 | 1 |
-| 3 | 🔴 Alta | Como usuário publico ou como agente, quero uma tela com a documentação dos indicadores para saber o que está sendo avaliado na exibição do mapa da cidade | 42 | 1 |
-| 4 | 🟡 Média | Como gestor, quero que a tela de documentação dos indicadores (rank 3) ofereça a possibilidade de adicionar, editar e deletar os indicadores, para que eu tenha controle sobre o monitoramento do trânsito da cidade | 22 | 1 |
-| 5 | 🟡 Média | Como gestor, quero ter a possibilidade de alterar as definições dos níveis referentes a um indicador sem modificar a quantidade de níveis existentes, para que o disparo de alertas, que dependem desses níveis, ocorram em momentos controlados | 12 | 2 |
-| 6 | 🟡 Média | Como gestor, quero poder associar um usuário agente a uma zona ou usuário gestor a uma zona, para que recebam informações específicas e centralizadas para atuar | 16 | 2 |
-| 7 | 🟡 Média | Como agente e como gestor, quero receber alertas quando houver mudança nos níveis de qualquer indicador, para que eu tenha noção de quando o trânsito piorar e possa tomar medidas para solucionar o problema | 39 | 2 |
-| 8 | 🟡 Média | Como gestor, quero que as zonas tenham informações das principais vias demarcadas e que apresentem o congestionamento dessa via, para que eu possa atuar de forma mais rápida e precisa em pontos críticos da cidade | 20 | 2 |
-| 9 | 🟡 Média | Como gestor, quero poder criar “causas raíz” para alertas disparados e poder criar protocolos para essas “causas raíz”, para que o agente tenha uma orientação de como resolver os alertas que surgirem | 18 | 2 |
-| 10 | 🟡 Média | Como agente, quero poder visualizar um alerta específico, para que possa documentar informações sobre este alerta, obter informações sobre como resolver o problema que gerou o alerta e finalizá-lo | 33 | 3 |
-| 11 | 🟢 Baixa | Como gestor, quero ter logs dos alertas gerados, para registro de auditoria e estudo de histórico do comportamento do trânsito | 6 | 3 |
-| 12 | 🟢 Baixa | Como gestor, quero um chat interno no produto para que eu possa consultar informações que estão no banco de forma simplificada | 42 | 3 |
+| 1 | 🔴 High | As a manager, I want traffic information in the form of dashboards, charts and tables to support my decisions on reducing traffic | 48 | 1 |
+| 2 | 🔴 High | As a platform user, I want a map on the home screen showing the zone divisions of São José dos Campos, so I can have a detailed view of the places the system has information about | 30 | 1 |
+| 3 | 🔴 High | As a public user or agent, I want a screen with the indicators' documentation so I know what is being evaluated on the city map | 42 | 1 |
+| 4 | 🟡 Medium | As a manager, I want the indicators documentation screen (rank 3) to allow adding, editing and deleting indicators, so I have control over the city's traffic monitoring | 22 | 1 |
+| 5 | 🟡 Medium | As a manager, I want to be able to change the level definitions of an indicator without changing the number of existing levels, so that alerts, which depend on these levels, are triggered at controlled moments | 12 | 2 |
+| 6 | 🟡 Medium | As a manager, I want to be able to assign an agent user or a manager user to a zone, so they receive specific, centralized information to act on | 16 | 2 |
+| 7 | 🟡 Medium | As an agent and as a manager, I want to receive alerts when the level of any indicator changes, so I know when traffic gets worse and can take action to solve the problem | 39 | 2 |
+| 8 | 🟡 Medium | As a manager, I want zones to include information about the main roads and show congestion on them, so I can act faster and more precisely at critical points in the city | 20 | 2 |
+| 9 | 🟡 Medium | As a manager, I want to be able to create "root causes" for triggered alerts and create protocols for these "root causes", so the agent has guidance on how to resolve the alerts that come up | 18 | 2 |
+| 10 | 🟡 Medium | As an agent, I want to be able to view a specific alert, so I can document information about it, get information on how to solve the problem that generated it, and close it | 33 | 3 |
+| 11 | 🟢 Low | As a manager, I want logs of the generated alerts, for audit records and to study the history of traffic behavior | 6 | 3 |
+| 12 | 🟢 Low | As a manager, I want an internal chat in the product so I can query information in the database in a simplified way | 42 | 3 |
 
 </details>
 
-→ [Voltar ao topo](#User-Standart)
+→ [Back to top](#radarius)
 
 ---
 
 <span id="dor">
 
 ## 🏃‍  DoR - Definition of Ready
-- User Stories com Critérios de Aceitação
-- Subtarefas divididas a partir das US
-- Design no Figma
-- Modelagem do Banco de Dados
-- Diagrama de Rotas
-- Banco de Dados Vetorizado do Cliente
+- User Stories with Acceptance Criteria
+- Subtasks broken down from the USs
+- Design in Figma
+- Database Modeling
+- Route Diagram
+- Client's Vectorized Database
 
 <span id="dod">
 
 ## 🏆 DoD - Definition of Done
-- Manual de Instalação
-- Manual de Usuário
-- Documentação da API (Application Programming Interface)
-- Código completo
-- Vídeos de cada etapa de entrega
+- Installation Manual
+- User Manual
+- API (Application Programming Interface) Documentation
+- Complete code
+- Videos of each delivery stage
 
-→ [Voltar ao topo](#User-Standart)
+→ [Back to top](#radarius)
 
 ---
 
-## 📅 Cronograma de Sprints
+## 📅 Sprint Schedule
 
-<span id="cronograma-de-sprints">
+<span id="sprint-schedule">
 
-| Sprint | Período | Histórico |
+| Sprint | Period | History |
 |-|-|-|
-| SPRINT 1 | 08/09 - 28/09 | [Sprint 1 Docs](https://github.com/User-Standart/API-4SEM/blob/main/docs/processo/sprints/sprint-1/README.md) |
-| SPRINT 2 | 06/10 - 26/10 | [Sprint 2 Docs](https://github.com/User-Standart/API-4SEM/blob/main/docs/processo/sprints/sprint-2/README.md) |
-| SPRINT 3 | 03/11 - 23/11 | [Sprint 3 Docs](https://github.com/User-Standart/API-4SEM/blob/main/docs/processo/sprints/sprint-3/README.md) |
+| SPRINT 1 | 09/08 - 09/28 | [Sprint 1 Docs](docs/processo/sprints/sprint-1/README.md) |
+| SPRINT 2 | 10/06 - 10/26 | [Sprint 2 Docs](docs/processo/sprints/sprint-2/README.md) |
+| SPRINT 3 | 11/03 - 11/23 | [Sprint 3 Docs](docs/processo/sprints/sprint-3/README.md) |
 
-→ [Voltar ao topo](#User-Standart)
+→ [Back to top](#radarius)
 
 ---
 
-<span id="tecnologias">
+<span id="technologies">
 
-## 💻 Tecnologias
+## 💻 Technologies
 
 <p align="center">
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
@@ -146,59 +146,59 @@ OBS: Foram necessárias alterações. Os user stories com * (asterisco) foram cr
   <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" />
 </p>
 
-→ [Voltar ao topo](#User-Standart)
+→ [Back to top](#radarius)
 
 ---
 
-<span id="manual-de-instalacao">
+<span id="installation-manual">
 
-## 📖 Manual de instalação
+## 📖 Installation manual
 
-Acesso ao manual pelo [Link](https://github.com/User-Standart/API-4SEM/blob/main/docs/install/README.md)
+Access the manual via this [Link](docs/install/README.md)
 <br />
 
-→ [Voltar ao topo](#User-Standart)
+→ [Back to top](#radarius)
 
 ---
 
-<span id="manual-do-usuario">
+<span id="user-manual">
 
-## 📘 Manual do usuário
+## 📘 User manual
 
-Acesso ao manual pelo [Link](https://drive.google.com/file/d/1L-FXcJWop9PP2Nl430whKPjNdSdH5czI/view?usp=sharing)
+Access the manual via this [Link](https://drive.google.com/file/d/1L-FXcJWop9PP2Nl430whKPjNdSdH5czI/view?usp=sharing)
 <br />
 
-→ [Voltar ao topo](#User-Standart)
+→ [Back to top](#radarius)
 
 ---
 
-<span id="documentacao-api">
+<span id="api-documentation">
 
-## 📓 Documentação API
+## 📓 API Documentation
 
-Acessar à documentação Swagger pelo [Link](https://drive.google.com/drive/folders/1cTevsjRi3AkroBniEprjlUZcLx0zNM3g?usp=sharing)
+Access the Swagger documentation via this [Link](https://drive.google.com/drive/folders/1cTevsjRi3AkroBniEprjlUZcLx0zNM3g?usp=sharing)
 
-→ [Voltar ao topo](#User-Standart)
-
----
-
-<span id="modelagem-de-banco-de-dados">
-
-## 🖥️ Modelagem de Banco de Dados
-
-<img alt="modelagem-banco" src="./docs/media/modelagem-banco-de-dados.png" />
-
-→ [Voltar ao topo](#User-Standart)
+→ [Back to top](#radarius)
 
 ---
 
-<span id="equipe">
+<span id="database-modeling">
 
-## :busts_in_silhouette: Equipe
+## 🖥️ Database Modeling
+
+<img alt="database modeling" src="./docs/media/modelagem-banco-de-dados.png" />
+
+→ [Back to top](#radarius)
+
+---
+
+<span id="team">
+
+## :busts_in_silhouette: Team
 
 <div align="center">
 
-|    Função     | Nome                  | LinkedIn & GitHub |
+|    Role       | Name                  | LinkedIn & GitHub |
 |---------------|-----------------------|-------------------|
 | Product Owner | Augusto Piatto        | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/augusto-piatto/) [![GitHub](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/augustopiatto) |
 | Scrum Master  | Beatriz Sthefanny     | [![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/beatriz-santos-0b6773220/) [![GitHub](https://img.shields.io/badge/GitHub-111217?logo=github&logoColor=white)](https://github.com/BeatrizSantos00) |
@@ -212,4 +212,4 @@ Acessar à documentação Swagger pelo [Link](https://drive.google.com/drive/fol
 
 </div>
 
-→ [Voltar ao topo](#User-Standart)
+→ [Back to top](#radarius)

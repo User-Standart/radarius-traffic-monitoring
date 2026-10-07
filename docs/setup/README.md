@@ -1,9 +1,9 @@
-## Instalar as dependências
+## Install the dependencies
 ```
 pip3 install pandas sqlalchemy oracledb
 ```
 
-## Configurar as variáveis no arquivo script-populate-table-dados_radares.py
+## Set the variables in the script-populate-table-dados_radares.py file
 ```
 def main():
     CONNECTION_STRING = ""
@@ -11,12 +11,12 @@ def main():
     CHUNK_SIZE = 10000
 ```
 
-## Suba seu banco, local ou remoto
+## Start your database, local or remote
 
-## Execute o script no terminal
+## Run the script in the terminal
 ```
 python3 script-populate-table-dados_radares.py
 ```
 
-## Conclusão
-Após o script finalizar, sua tabela estará populada e você poderá utilizar as informações desejadas
+## Conclusion
+Once the script finishes, your table will be populated and you can use the data you need

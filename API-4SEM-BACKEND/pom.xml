@@ -12,7 +12,7 @@
 	<artifactId>radarius</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>radarius</name>
-	<description>Backend para o projeto Radarius da User-Standart</description>
+	<description>Backend for the Radarius project</description>
 	<url/>
 	<licenses>
 		<license/>

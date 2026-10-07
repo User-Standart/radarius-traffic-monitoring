@@ -1,84 +1,76 @@
-# 📖 Manual de Instalação - User-Standart
+# 📖 Installation Manual - Radarius
 
-Bem-vindo ao guia de instalação do **User-Standart**! Este documento vai te orientar passo a passo para configurar e executar a aplicação completa do projeto.
+Welcome to the **Radarius** installation guide! This document walks you step by step through setting up and running the full application.
 
-## 🎯 O que você vai instalar?
+## 🎯 What will you install?
 
-Este projeto é composto por:
-- **Frontend**: Interface web desenvolvida em Vue.js 3
-- **Backend**: API RESTful desenvolvida em Spring Boot (Java 21)
-- **Banco de Dados**: Oracle Database (via Oracle Cloud)
-- **Docker**: Para orquestrar e executar todos os serviços
+This project consists of:
+- **Frontend**: Web interface built with Vue.js 3
+- **Backend**: RESTful API built with Spring Boot (Java 21)
+- **Database**: Oracle Database (via Oracle Cloud)
+- **Docker**: To orchestrate and run all services
 
-## 📋 Pré-requisitos
+## 📋 Prerequisites
 
-Antes de começar, você precisará ter instalado em sua máquina:
+Before you start, you will need the following installed on your machine:
 
-### Obrigatório:
-- **[Git](https://git-scm.com/downloads)** - Para clonar o repositório
-- **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** - Para Windows, Linux ou Mac
-  - ⚠️ Certifique-se de que o Docker Desktop está em execução antes de prosseguir
+### Required:
+- **[Git](https://git-scm.com/downloads)** - To clone the repository
+- **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** - For Windows, Linux or Mac
+  - ⚠️ Make sure Docker Desktop is running before continuing
 
-### Opcional (apenas se NÃO usar Docker):
-- **[Node.js 20+](https://nodejs.org/)** e npm - Para executar o frontend manualmente
-- **[Java 21](https://www.azul.com/downloads/?version=java-21-lts&package=jdk#zulu)** - Para executar o backend manualmente
+### Optional (only if NOT using Docker):
+- **[Node.js 20+](https://nodejs.org/)** and npm - To run the frontend manually
+- **[Java 21](https://www.azul.com/downloads/?version=java-21-lts&package=jdk#zulu)** - To run the backend manually
 
-## 🚀 Instalação Rápida (Recomendado)
+## 🚀 Quick Install (Recommended)
 
-### Passo 1: Clone o repositório
+### Step 1: Clone the repository
 
-Abra um terminal e execute:
+Open a terminal and run:
 
 ```bash
 git clone https://github.com/User-Standart/API-4SEM.git
 cd API-4SEM
 ```
 
-### Passo 2: Baixe os submódulos
+### Step 2: Configure the Oracle Wallet
 
-O projeto utiliza submódulos Git para o frontend e backend:
-
-```bash
-git submodule update --init --recursive
-```
-
-### Passo 3: Configure o Oracle Wallet
-
-O projeto utiliza Oracle Database com autenticação via Wallet. Certifique-se de que a pasta `Wallet_radarius` está presente em:
+The project uses Oracle Database with Wallet authentication. Make sure the `Wallet_radarius` folder is present at:
 
 ```
 API-4SEM-BACKEND/Wallet_radarius/
 ```
 
-> 💡 **Nota**: Os arquivos do Wallet são necessários para conectar ao banco de dados Oracle. Entre em contato com a equipe se você não tiver acesso a esses arquivos.
+> 💡 **Note**: The Wallet files are required to connect to the Oracle database.
 
-### Passo 4: Inicie a aplicação com Docker
+### Step 3: Start the application with Docker
 
-No diretório raiz do projeto (`API-4SEM`), execute:
+From the project root directory (`API-4SEM`), run:
 
 ```bash
 docker-compose up --build
 ```
 
-Este comando irá:
-- ✅ Construir as imagens Docker do frontend e backend
-- ✅ Iniciar os containers
-- ✅ Configurar a rede entre os serviços
-- ✅ Disponibilizar a aplicação
+This command will:
+- ✅ Build the frontend and backend Docker images
+- ✅ Start the containers
+- ✅ Set up the network between the services
+- ✅ Make the application available
 
-**Aguarde alguns minutos** enquanto o Docker faz o download das dependências e constrói os containers. Você verá logs no terminal indicando o progresso.
+**Wait a few minutes** while Docker downloads the dependencies and builds the containers. You will see logs in the terminal showing the progress.
 
-### Passo 5: Acesse a aplicação
+### Step 4: Access the application
 
-Após a inicialização completa, acesse:
+Once startup is complete, open:
 
 - **🌐 Frontend**: http://localhost
-- **🔧 API Backend**: http://localhost:8080
+- **🔧 Backend API**: http://localhost:8080
 - **💚 Health Check**: http://localhost:8080/actuator/health
 
-## 🎨 Modo de Desenvolvimento
+## 🎨 Development Mode
 
-Se você preferir executar a aplicação em modo de desenvolvimento (sem Docker):
+If you prefer to run the application in development mode (without Docker):
 
 ### Frontend
 ```bash
@@ -86,137 +78,116 @@ cd API-4SEM-FRONTEND
 npm install
 npm run dev
 ```
-Acesse em: http://localhost:5173
+Open: http://localhost:5173
 
 ### Backend
 ```bash
 cd API-4SEM-BACKEND
 ./gradlew bootRun
 ```
-ou
+or
 ```bash
 java -jar build/libs/radarius-backend.jar
 ```
 
-## 🛠️ Comandos Úteis do Docker
+## 🛠️ Useful Docker Commands
 
-### Ver logs da aplicação
+### View application logs
 ```bash
-# Ver todos os logs
+# View all logs
 docker-compose logs -f
 
-# Ver logs apenas do backend
+# View backend logs only
 docker-compose logs -f backend
 
-# Ver logs apenas do frontend
+# View frontend logs only
 docker-compose logs -f frontend
 ```
 
-### Parar a aplicação
+### Stop the application
 ```bash
 docker-compose down
 ```
 
-### Parar e remover volumes
+### Stop and remove volumes
 ```bash
 docker-compose down -v
 ```
 
-### Reconstruir após alterações
+### Rebuild after changes
 ```bash
 docker-compose up --build
 ```
 
-### Executar em segundo plano (detached mode)
+### Run in the background (detached mode)
 ```bash
 docker-compose up -d
 ```
 
-## 🔧 Resolução de Problemas
+## 🔧 Troubleshooting
 
-### ❌ Porta 80 ou 8080 já está em uso
+### ❌ Port 80 or 8080 is already in use
 
-**Problema**: Outro serviço está usando as portas necessárias.
+**Problem**: Another service is using the required ports.
 
-**Solução**: Edite o arquivo `docker-compose.yml` e altere as portas:
+**Solution**: Edit the `docker-compose.yml` file and change the ports:
 
 ```yaml
 services:
   backend:
     ports:
-      - "8081:8080"  # Mude 8080 para 8081
+      - "8081:8080"  # Change 8080 to 8081
   frontend:
     ports:
-      - "3000:80"    # Mude 80 para 3000
+      - "3000:80"    # Change 80 to 3000
 ```
 
-### ❌ Docker não está em execução
+### ❌ Docker is not running
 
-**Problema**: O Docker Desktop não foi iniciado.
+**Problem**: Docker Desktop has not been started.
 
-**Solução**: 
-- No Windows: Abra o Docker Desktop pelo menu Iniciar
-- No Linux: Execute `sudo systemctl start docker`
-- No Mac: Abra o Docker Desktop pela barra de aplicativos
+**Solution**:
+- On Windows: Open Docker Desktop from the Start menu
+- On Linux: Run `sudo systemctl start docker`
+- On Mac: Open Docker Desktop from the Applications folder
 
-### ❌ Erro de conexão com o banco de dados
+### ❌ Database connection error
 
-**Problema**: Arquivos do Wallet estão ausentes ou inválidos.
+**Problem**: Wallet files are missing or invalid.
 
-**Solução**:
-1. Verifique se a pasta `API-4SEM-BACKEND/Wallet_radarius` existe
-2. Verifique se os arquivos do Wallet estão presentes
-3. Entre em contato com a equipe para obter os arquivos corretos
+**Solution**:
+1. Check that the `API-4SEM-BACKEND/Wallet_radarius` folder exists
+2. Check that the Wallet files are present
+3. Make sure you are using valid Wallet files for your Oracle instance
 
-### ❌ Submódulos vazios
+### ❌ Build failed
 
-**Problema**: As pastas `API-4SEM-BACKEND` e `API-4SEM-FRONTEND` estão vazias.
+**Problem**: Error while building the Docker images.
 
-**Solução**:
-```bash
-git submodule update --init --recursive
-```
-
-### ❌ Build falhou
-
-**Problema**: Erro durante a construção das imagens Docker.
-
-**Solução**:
-1. Limpe as imagens antigas:
+**Solution**:
+1. Clean up old images:
    ```bash
    docker-compose down --rmi all
    docker system prune -a
    ```
-2. Reconstrua:
+2. Rebuild:
    ```bash
    docker-compose up --build
    ```
 
-## 📊 Verificando se está tudo funcionando
+## 📊 Checking that everything works
 
-Execute estas verificações para garantir que tudo está OK:
+Run these checks to make sure everything is OK:
 
-1. ✅ **Docker**: `docker ps` deve mostrar 2 containers rodando
-2. ✅ **Backend**: Acesse http://localhost:8080/actuator/health - deve retornar `{"status":"UP"}`
-3. ✅ **Frontend**: Acesse http://localhost - deve carregar a página inicial
-4. ✅ **Logs**: `docker-compose logs` não deve mostrar erros críticos
+1. ✅ **Docker**: `docker ps` should show 2 running containers
+2. ✅ **Backend**: Open http://localhost:8080/actuator/health - it should return `{"status":"UP"}`
+3. ✅ **Frontend**: Open http://localhost - the home page should load
+4. ✅ **Logs**: `docker-compose logs` should not show critical errors
 
-## 📚 Próximos Passos
+## 📚 Next Steps
 
-Agora que a aplicação está instalada e rodando:
+Now that the application is installed and running:
 
-1. 📖 Consulte o [Manual do Usuário](../user/README.md) para aprender a usar o sistema
-2. 🔍 Veja a [Documentação da API](../../README.md#documentacao-api) para entender os endpoints
-3. 🗄️ Confira a [Modelagem do Banco de Dados](../../README.md#modelagem-de-banco-de-dados)
-
-## 💬 Precisa de Ajuda?
-
-Entre em contato com a equipe User-Standart:
-
-- 📧 **Email de Suporte**: davisfs2110@gmail.com
-
----
-
-<p align="center">
-  Feito com ❤️ e 🤖 pela equipe <strong>User-Standart</strong>
-</p>
+1. 📖 Check the [User Manual](../user/README.md) to learn how to use the system
+2. 🔍 See the [API Documentation](../../README.md#api-documentation) to understand the endpoints
+3. 🗄️ Check the [Database Modeling](../../README.md#database-modeling)
