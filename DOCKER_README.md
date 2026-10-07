@@ -15,7 +15,7 @@ This repository contains the **Docker setup** to run the application with a **Sp
 ## Project Structure
 
 ```
-API-4SEM/
+radarius-traffic-monitoring/
 ├── API-4SEM-BACKEND/          # Spring Boot backend
 │   ├── Dockerfile
 │   ├── .dockerignore
@@ -35,7 +35,7 @@ API-4SEM/
 
     ```bash
     git clone <repository-url>
-    cd API-4SEM
+    cd radarius-traffic-monitoring
     ```
 
 2.  **Build and start the application**:

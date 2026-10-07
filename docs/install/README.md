@@ -30,8 +30,8 @@ Before you start, you will need the following installed on your machine:
 Open a terminal and run:
 
 ```bash
-git clone https://github.com/User-Standart/API-4SEM.git
-cd API-4SEM
+git clone https://github.com/User-Standart/radarius-traffic-monitoring.git
+cd radarius-traffic-monitoring
 ```
 
 ### Step 2: Configure the Oracle Wallet
@@ -46,7 +46,7 @@ API-4SEM-BACKEND/Wallet_radarius/
 
 ### Step 3: Start the application with Docker
 
-From the project root directory (`API-4SEM`), run:
+From the project root directory (`radarius-traffic-monitoring`), run:
 
 ```bash
 docker-compose up --build
