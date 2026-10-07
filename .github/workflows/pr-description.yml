@@ -16,19 +16,19 @@ jobs:
           script: |
             const { context } = require('@actions/github');
             const prNumber = context.payload.pull_request.number;
-            // Descrição padrão para o PR
+            // Default PR description
             const description = `
-### Descrição
-Este PR foi criado com a intenção de ...
-[Card](link aqui)
+### Description
+This PR was created to ...
+[Card](link here)
 
-### Regras de negócio
+### Business rules
 - N/A
 
-### Como testar
-- Passo 1
+### How to test
+- Step 1
 `;
-            
+
             await github.rest.pulls.update({
               owner: context.repo.owner,
               repo: context.repo.repo,
