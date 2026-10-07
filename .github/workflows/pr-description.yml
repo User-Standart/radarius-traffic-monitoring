@@ -5,33 +5,36 @@ on:
     types:
       - opened
 
+permissions:
+  pull-requests: write
+
 jobs:
   set-pr-description:
     runs-on: ubuntu-latest
 
     steps:
       - name: Set PR Description
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
-            const { context } = require('@actions/github');
-            const prNumber = context.payload.pull_request.number;
-            // Default PR description
-            const description = `
-### Description
-This PR was created to ...
-[Card](link here)
+            // Default PR description, applied only when the author left it empty
+            if (context.payload.pull_request.body) return;
 
-### Business rules
-- N/A
-
-### How to test
-- Step 1
-`;
+            const description = [
+              '### Description',
+              'This PR was created to ...',
+              '[Card](link here)',
+              '',
+              '### Business rules',
+              '- N/A',
+              '',
+              '### How to test',
+              '- Step 1',
+            ].join('\n');
 
             await github.rest.pulls.update({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              pull_number: prNumber,
+              pull_number: context.payload.pull_request.number,
               body: description,
             });
