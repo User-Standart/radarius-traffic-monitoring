@@ -1,0 +1,144 @@
+package com.caioosorio.radarius.repository;
+
+import com.caioosorio.radarius.entity.Alert;
+import com.caioosorio.radarius.entity.Criterion;
+import com.caioosorio.radarius.entity.Region;
+import com.caioosorio.radarius.enums.SourceTypeEnum;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface AlertRepository extends JpaRepository<Alert, Integer> {
+
+    @Query("""
+        SELECT a
+        FROM Alert a
+        JOIN a.logs al
+        WHERE al.region.id = :regionId
+        ORDER BY al.createdAt DESC
+    """)
+    List<Alert> findTop10ByRegion(@Param("regionId") Integer regionId, Pageable pageable);
+
+    @Query("""
+        SELECT DISTINCT a
+        FROM Alert a
+        LEFT JOIN a.logs al
+        WHERE (:regionIds IS NULL OR al.region.id IN :regionIds)
+        AND (:startDate IS NULL OR a.createdAt >= :startDate)
+        AND (:endDate IS NULL OR a.createdAt <= :endDate)
+        ORDER BY a.createdAt DESC
+    """)
+    Page<Alert> findWithFilters(@Param("regionIds") List<Integer> regionIds,
+            @Param("startDate") LocalDateTime startDate,
+            @Param("endDate") LocalDateTime endDate,
+            Pageable pageable);
+
+    Optional<Alert> findFirstByCriterionIdAndRegionIdOrderByCreatedAtDesc(Integer criterionId, Integer regionId);
+    
+    Optional<Alert> findTopBySourceTypeAndCriterionIdAndRegionIdOrderByCreatedAtDesc(
+        SourceTypeEnum sourceType, Integer criterionId, Integer regionId);
+    
+    @Query("SELECT a FROM Alert a WHERE a.sourceType = :sourceType AND a.criterion.id = :criterionId AND a.region.id = :regionId AND a.closedAt IS NULL ORDER BY a.createdAt DESC")
+    Optional<Alert> findActiveAlertBySourceTypeAndCriterionIdAndRegionId(
+        @Param("sourceType") SourceTypeEnum sourceType, 
+        @Param("criterionId") Integer criterionId, 
+        @Param("regionId") Integer regionId);
+    
+    @Query("SELECT a FROM Alert a WHERE a.closedAt IS NULL AND a.createdAt < :threshold")
+    List<Alert> findActiveAlertsOlderThan(@Param("threshold") LocalDateTime threshold);
+    
+    @Query("SELECT a FROM Alert a WHERE a.closedAt IS NULL")
+    List<Alert> findActiveAlerts();
+    
+    @Query("SELECT a FROM Alert a WHERE a.closedAt IS NULL AND a.region.id = :regionId")
+    List<Alert> findActiveAlertsByRegionId(@Param("regionId") Integer regionId);
+    
+    @Query("""
+        SELECT a FROM Alert a 
+        WHERE a.closedAt IS NULL AND a.region.id IN :regionIds
+        ORDER BY 
+            CASE 
+                WHEN a.region.name = 'Zona Sul' THEN 1
+                WHEN a.region.name = 'Zona Norte' THEN 2
+                WHEN a.region.name = 'Zona Leste' THEN 3
+                WHEN a.region.name = 'Zona Oeste' THEN 4
+                WHEN a.region.name = 'Centro' THEN 5
+                ELSE 6
+            END,
+            a.level DESC,
+            a.createdAt DESC
+    """)
+    List<Alert> findActiveAlertsByRegionIds(@Param("regionIds") List<Integer> regionIds);
+    
+    @Query("SELECT a FROM Alert a WHERE a.closedAt IS NULL AND a.level = :level")
+    List<Alert> findActiveAlertsByLevel(@Param("level") Integer level);
+    
+    Optional<Alert> findTopByCriterionAndRegionAndClosedAtIsNullOrderByCreatedAtDesc(
+        Criterion criterion, Region region);
+    
+    @Query("SELECT a FROM Alert a WHERE a.criterion.id = :criterionId AND a.region.id = :regionId AND a.id != :excludeId ORDER BY a.createdAt DESC")
+    List<Alert> findByCriterionIdAndRegionIdExcludingIdOrderByCreatedAtDesc(
+        @Param("criterionId") Integer criterionId, 
+        @Param("regionId") Integer regionId, 
+        @Param("excludeId") Integer excludeId,
+        Pageable pageable);
+
+    @Query("""
+    SELECT a
+    FROM Alert a
+    WHERE a.region.id IN :regionIds
+      AND a.closedAt IS NULL
+""")
+    List<Alert> findTop5WorstByRegionIds(
+            @Param("regionIds") List<Integer> regionIds,
+            Pageable pageable);
+
+    @Query("""
+        SELECT a FROM Alert a 
+        WHERE a.region.id IN :regionIds 
+        AND a.criterion.id = :criterionId 
+        AND a.closedAt IS NULL 
+    """)
+    List<Alert> findTop5WorstByRegionIdsAndCriterion(
+            @Param("regionIds") List<Integer> regionIds,
+            @Param("criterionId") Integer criterionId,
+            Pageable pageable);
+
+    @Query("""
+        SELECT new map(a.region.id as regionId, CAST(CEILING(AVG(a.level)) as java.lang.Integer) as level)
+        FROM Alert a
+        WHERE a.closedAt IS NULL
+        GROUP BY a.region.id
+    """)
+    List<java.util.Map<String, Object>> findAverageLevelPerRegion();
+
+    @Query("""
+    SELECT DISTINCT a
+    FROM Alert a
+    WHERE (:regionIds IS NULL OR a.region.id IN :regionIds)
+    AND (:criterionIds IS NULL OR a.criterion.id IN :criterionIds)
+    AND (:levels IS NULL OR a.level IN :levels)
+    AND (:startDate IS NULL OR a.createdAt >= :startDate)
+    AND (:endDate IS NULL OR a.createdAt <= :endDate)
+    AND (:isOpen IS NULL OR (:isOpen = true AND a.closedAt IS NULL) OR (:isOpen = false AND a.closedAt IS NOT NULL))
+    ORDER BY a.createdAt DESC
+""")
+    Page<Alert> findHistoryWithFilters(
+            @Param("regionIds") List<Integer> regionIds,
+            @Param("criterionIds") List<Integer> criterionIds,
+            @Param("levels") List<Short> levels,
+            @Param("isOpen") Boolean isOpen,
+            @Param("startDate") LocalDateTime startDate,
+            @Param("endDate") LocalDateTime endDate,
+            Pageable pageable
+    );
+
+}
